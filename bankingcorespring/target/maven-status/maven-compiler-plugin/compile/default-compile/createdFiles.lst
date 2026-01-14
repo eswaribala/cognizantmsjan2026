@@ -1,0 +1,8 @@
+com\cognizant\banking\models\Customer.class
+com\cognizant\banking\utils\CustomerApp.class
+com\cognizant\banking\models\Gender.class
+com\cognizant\banking\models\Corporate.class
+com\cognizant\banking\models\FullName.class
+com\cognizant\banking\models\Address.class
+com\cognizant\banking\models\CompanyType.class
+com\cognizant\banking\models\Individual.class

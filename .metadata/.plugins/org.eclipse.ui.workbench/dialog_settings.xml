@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="588"/>
-		<item key="DIALOG_Y_ORIGIN" value="11"/>
-		<item key="DIALOG_WIDTH" value="1185"/>
-		<item key="DIALOG_HEIGHT" value="1128"/>
+		<item key="DIALOG_X_ORIGIN" value="7"/>
+		<item key="DIALOG_Y_ORIGIN" value="7"/>
+		<item key="DIALOG_WIDTH" value="1280"/>
+		<item key="DIALOG_HEIGHT" value="752"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="FileExtensionDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="258"/>
+		<item key="DIALOG_Y_ORIGIN" value="252"/>
+		<item key="DIALOG_WIDTH" value="875"/>
+		<item key="DIALOG_HEIGHT" value="469"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="EditorSelectionDialog">
 	</section>
 </section>
