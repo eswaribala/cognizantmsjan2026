@@ -1,0 +1,4 @@
+com\cognizant\banking\aspects\AccountLoggingAspect.class
+com\cognizant\banking\models\CurrentAccount.class
+com\cognizant\banking\models\SavingsAccount.class
+com\cognizant\banking\models\Account.class

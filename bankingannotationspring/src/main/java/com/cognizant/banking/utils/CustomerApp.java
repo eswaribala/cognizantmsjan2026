@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.web.client.RestClient;
 
 import com.cognizant.banking.models.Address;
 import com.cognizant.banking.models.CompanyAddress;
@@ -21,6 +22,7 @@ import com.github.javafaker.Faker;
 public class CustomerApp {
 
 	public static void main(String[] args) {
+		
 		
 		Faker faker=new Faker();		
 		Logger logger=Logger.getLogger("CustomerApp");
