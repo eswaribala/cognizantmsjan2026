@@ -18,7 +18,7 @@ public class CustomerValidationAspect {
 	Logger logger = LoggerFactory.getLogger(CustomerValidationAspect.class);
     final Pattern namePattern=Pattern.compile("^[a-zA-Z]{5,25}$");
     final Pattern emailPattern=Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$");
-	final Pattern phonePattern=Pattern.compile("^[0-9]{10}$");
+	final Pattern passwordPattern=Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,20}$");
 	
 	private void validateCustomer(Customer customer) {
 	    // Logic to validate customer details
@@ -36,6 +36,19 @@ public class CustomerValidationAspect {
 			throw new IllegalArgumentException("Invalid last name");
 		}
 		
+		if(customer.getEmail()==null || 
+				!emailPattern.matcher(customer.getEmail()).matches()) {
+			throw new IllegalArgumentException("Invalid email");
+		}
+		
+		if(customer.getContactNo()<0 || 
+				String.valueOf(customer.getContactNo()).length()<10) {
+			throw new IllegalArgumentException("Invalid phone number");
+		}
+		if(customer.getPassword()==null || 
+				!passwordPattern.matcher(customer.getPassword()).matches()) {
+			throw new IllegalArgumentException("Invalid password");
+		}
 	}
 
 }
