@@ -3,6 +3,7 @@ package com.cognizant.banking.aspects;
 import java.util.regex.Pattern;
 
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,12 @@ public class CustomerValidationAspect {
     final Pattern namePattern=Pattern.compile("^[a-zA-Z]{5,25}$");
     final Pattern emailPattern=Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$");
 	final Pattern passwordPattern=Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,20}$");
+	@Before("execution(* com.cognizant.banking.services.CustomerService.addCustomer(..)) && args(customer)")
+	public void addCustomerValidation(Customer customer) {
+		logger.info("Start - addCustomerValidation");
+	    validateCustomer(customer);
+	    logger.info("End - addCustomerValidation");
+	}
 	
 	private void validateCustomer(Customer customer) {
 	    // Logic to validate customer details
