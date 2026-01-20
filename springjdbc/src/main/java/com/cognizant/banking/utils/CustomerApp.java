@@ -1,5 +1,8 @@
 package com.cognizant.banking.utils;
 
+import java.util.List;
+import java.util.Random;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.cognizant.banking.configurations.AppConfig;
@@ -23,12 +26,17 @@ public class CustomerApp {
 		customer.setEmail(faker.internet().emailAddress());
 		customer.setContactNo(Long.parseLong(faker.phoneNumber().subscriberNumber(10)));
 		customer.setPassword(faker.internet().password(8, 10, true, true, true));
-		boolean isAdded = customerRepository.addCustomer(customer);
-		if(isAdded) {
-			System.out.println("Customer added successfully!");
-		} else {
-			System.out.println("Failed to add customer.");
-		}
+		/*
+		 * boolean isAdded = customerRepository.addCustomer(customer); if(isAdded) {
+		 * System.out.println("Customer added successfully!"); } else {
+		 * System.out.println("Failed to add customer."); }
+		 */
+	  List<Long> accountNos=customerRepository.getAllCustomers()
+			  .stream().map(c->c.getAccountNo()).toList();
+	  long randomNo= accountNos.get(new Random().nextInt(accountNos.size()));
+	  Customer fetchedCustomer=customerRepository.getCustomerById(randomNo);
+	  System.out.println("Fetched Customer Details:");
+	  System.out.println(fetchedCustomer);
 		
         context.close();
 		

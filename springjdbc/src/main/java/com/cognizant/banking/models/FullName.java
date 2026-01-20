@@ -1,5 +1,6 @@
 package com.cognizant.banking.models;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Component
+@Scope("prototype")
 public class FullName {
 	private String firstName;
 	private String middleName;
