@@ -14,7 +14,7 @@ public class CustomerApp {
         Faker faker = new Faker();
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		CustomerService customerService = context.getBean(CustomerService.class);
-		Customer customer = context.getBean(Customer.class);
+		Customer customer = context.getBean(Customer.class);		
 		customer.setAccountNo(faker.number().numberBetween(1000000000L, 9999999999L));
 		customer.getFullName().setFirstName(faker.name().firstName());
 		customer.getFullName().setLastName(faker.name().lastName());

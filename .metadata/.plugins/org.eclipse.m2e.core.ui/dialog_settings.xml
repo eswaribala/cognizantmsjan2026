@@ -51,6 +51,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="springaop"/>
+			<item value="bankingbeanlifecycle"/>
 			<item value="bankingzeroxml"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -71,6 +73,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\cognizantmsjan2026\springjdbc"/>
 			<item value="E:\cognizantmsjan2026\bankingannotationspring"/>
 			<item value="E:\cognizantmsjan2026\bankingcorespring"/>
 		</list>
