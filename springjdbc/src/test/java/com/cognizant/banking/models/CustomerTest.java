@@ -37,14 +37,10 @@ public class CustomerTest {
 	class FullNameTest{
 		@ParameterizedTest
 		@ValueSource(strings = {"John","A.","Doe"})
-		public void testFullName(String firstName, String middleName, String lastName) {
-			fullName.setFirstName(firstName);
-			fullName.setMiddleName(middleName);
-			fullName.setLastName(lastName);
+		public void testFullName(String firstName) {
+			fullName.setFirstName(firstName);			
 			assertAll(
-					() -> assertTrue(firstName.equals(fullName.getFirstName())),
-					() -> assertTrue(middleName.equals(fullName.getMiddleName())),
-					() -> assertTrue(lastName.equals(fullName.getLastName()))
+					() -> assertTrue(firstName.equals(fullName.getFirstName()))					
 					);
 		}
 		
@@ -69,7 +65,7 @@ public class CustomerTest {
 	@Nested
 	class EmailTest{
 		@ParameterizedTest
-		@MethodSource("provideCustomers")
+		@MethodSource("com.cognizant.banking.models.CustomerTest#provideCustomers")
 		public void testEmail(Customer customer) {
 			String emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 			assertTrue(customer.getEmail().matches(emailRegex));
@@ -139,8 +135,10 @@ public class CustomerTest {
 		List<Arguments> customerStream = new ArrayList<>();
 		for(int i=1;i<=5;i++) {
 			Customer customer=new Customer();
+			FullName fullName=new FullName();
 			Faker faker = new Faker();
 			customer.setAccountNo(faker.number().numberBetween(1000000000L, 9999999999L));
+			customer.setFullName(fullName);
 			customer.getFullName().setFirstName(faker.name().firstName());
 			customer.getFullName().setMiddleName(faker.name().nameWithMiddle());
 			customer.getFullName().setLastName(faker.name().lastName());

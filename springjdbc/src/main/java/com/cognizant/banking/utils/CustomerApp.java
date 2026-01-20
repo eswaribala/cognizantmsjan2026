@@ -9,6 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.cognizant.banking.configurations.AppConfig;
 import com.cognizant.banking.models.Customer;
+import com.cognizant.banking.models.FullName;
 import com.cognizant.banking.repositories.CustomerRepositoryImpl;
 import com.cognizant.banking.services.CustomerService;
 import com.github.javafaker.Faker;
@@ -48,8 +49,10 @@ public class CustomerApp {
 		List<Customer> customers=new ArrayList<>();
 		for(int i=1;i<=5;i++) {
 			Customer customer=new Customer();
+			FullName fullName=new FullName();
 			Faker faker = new Faker();
 			customer.setAccountNo(faker.number().numberBetween(1000000000L, 9999999999L));
+			customer.setFullName(fullName);
 			customer.getFullName().setFirstName(faker.name().firstName());
 			customer.getFullName().setMiddleName(faker.name().nameWithMiddle());
 			customer.getFullName().setLastName(faker.name().lastName());
