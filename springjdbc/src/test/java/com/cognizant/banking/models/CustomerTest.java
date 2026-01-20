@@ -9,10 +9,19 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import com.cognizant.banking.utils.CustomerApp;
+import com.github.javafaker.Faker;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 public class CustomerTest {
 	
 	private Customer customer;
@@ -42,22 +51,32 @@ public class CustomerTest {
 	}
 	@Nested
 	class AccountNoTest{
-		
+		@Test
 		public void testAccountNo() {
-			customer.setAccountNo(1234567890L);
-			assertEquals(1234567890L, customer.getAccountNo());
+			List<Long> accountNos = CustomerApp.getAllCustomers()
+					  .stream().map(c->c.getAccountNo()).toList();
+			assertAll(
+					() -> assertTrue(accountNos.stream().allMatch(no -> no >= 1000000000L 
+					&& no <= 9999999999L)),
+					() -> assertEquals(5, accountNos.size()),
+					()-> assertFalse(accountNos.isEmpty())
+					);
+		 
 		}
 		
 	}
 	
 	@Nested
 	class EmailTest{
-		
-		public void testEmail() {
+		@ParameterizedTest
+		@MethodSource("provideCustomers")
+		public void testEmail(Customer customer) {
+			String emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+			assertTrue(customer.getEmail().matches(emailRegex));
 		}
 	}
 		
-	}
+	
 	
 	@Test
 	@RepeatedTest(3)
@@ -115,4 +134,21 @@ public class CustomerTest {
 		customer = null;
 	}
 
+	
+	public static Stream<Arguments> provideCustomers() {
+		List<Arguments> customerStream = new ArrayList<>();
+		for(int i=1;i<=5;i++) {
+			Customer customer=new Customer();
+			Faker faker = new Faker();
+			customer.setAccountNo(faker.number().numberBetween(1000000000L, 9999999999L));
+			customer.getFullName().setFirstName(faker.name().firstName());
+			customer.getFullName().setMiddleName(faker.name().nameWithMiddle());
+			customer.getFullName().setLastName(faker.name().lastName());
+			customer.setEmail(faker.internet().emailAddress());
+			customer.setContactNo(Long.parseLong(faker.phoneNumber().subscriberNumber(10)));
+			customer.setPassword(faker.internet().password(8, 10, true, true, true));
+			customerStream.add(Arguments.of(customer));
+		}
+		return customerStream.stream();
+	}
 }

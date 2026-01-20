@@ -3,6 +3,7 @@ package com.cognizant.banking.utils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Stream;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -59,5 +60,8 @@ public class CustomerApp {
 		}
 		return customers;
 	}
+	
+	
+	
 
 }
