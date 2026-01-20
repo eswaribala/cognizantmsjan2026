@@ -3,6 +3,7 @@ package com.cognizant.banking.models;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
@@ -21,6 +22,40 @@ public class CustomerTest {
 	public void setUp() {
 		customer = new Customer();
 		fullName = new FullName();
+		
+	}
+	@Nested
+	class FullNameTest{
+		@ParameterizedTest
+		@ValueSource(strings = {"John","A.","Doe"})
+		public void testFullName(String firstName, String middleName, String lastName) {
+			fullName.setFirstName(firstName);
+			fullName.setMiddleName(middleName);
+			fullName.setLastName(lastName);
+			assertAll(
+					() -> assertTrue(firstName.equals(fullName.getFirstName())),
+					() -> assertTrue(middleName.equals(fullName.getMiddleName())),
+					() -> assertTrue(lastName.equals(fullName.getLastName()))
+					);
+		}
+		
+	}
+	@Nested
+	class AccountNoTest{
+		
+		public void testAccountNo() {
+			customer.setAccountNo(1234567890L);
+			assertEquals(1234567890L, customer.getAccountNo());
+		}
+		
+	}
+	
+	@Nested
+	class EmailTest{
+		
+		public void testEmail() {
+		}
+	}
 		
 	}
 	

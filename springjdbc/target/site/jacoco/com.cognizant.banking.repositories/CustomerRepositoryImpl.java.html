@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomerRepositoryImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">springjdbc</a> &gt; <a href="index.source.html" class="el_package">com.cognizant.banking.repositories</a> &gt; <span class="el_source">CustomerRepositoryImpl.java</span></div><h1>CustomerRepositoryImpl.java</h1><pre class="source lang-java linenums">package com.cognizant.banking.repositories;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.cognizant.banking.configurations.AppConfig;
+import com.cognizant.banking.models.Customer;
+import com.cognizant.banking.models.FullName;
+
+@Repository
+<span class="nc" id="L19">public class CustomerRepositoryImpl implements CustomerRepository {</span>
+    @Autowired
+	private JdbcTemplate jdbcTemplate;
+    @Value(&quot;${addCustomer}&quot;)
+    private String addCustomerQuery;
+    @Value(&quot;${selectAllCustomers}&quot;)
+    private String selectAllCustomersQuery;
+    @Value(&quot;${selectCustomerById}&quot;)
+    private String selectCustomerByIdQuery;
+    @Value(&quot;${updateCustomerContactNo}&quot;)
+    private String updateCustomerQuery;
+    @Value(&quot;${deleteCustomerById}&quot;)
+    private String deleteCustomerQuery;
+    @Autowired 
+    ObjectProvider&lt;Customer&gt; customerProvider;
+    @Autowired 
+    ObjectProvider&lt;FullName&gt; fullNameProvider;
+   
+	
+	@Override
+	public boolean addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L41">		int rows=jdbcTemplate.update(addCustomerQuery, </span>
+<span class="nc" id="L42">				customer.getAccountNo(), customer.getFullName().getFirstName(),</span>
+<span class="nc" id="L43">				customer.getFullName().getMiddleName(),</span>
+<span class="nc" id="L44">				customer.getFullName().getLastName(), </span>
+<span class="nc" id="L45">				customer.getEmail(), customer.getPassword(),customer.getContactNo());</span>
+		
+<span class="nc bnc" id="L47" title="All 2 branches missed.">		return rows&gt;0;</span>
+	}
+
+	@Override
+	public Customer getCustomerById(long accountNo) {
+		// TODO Auto-generated method stub
+<span class="nc" id="L53">		return jdbcTemplate.queryForObject(selectCustomerByIdQuery, this::mapRowToCustomer, </span>
+<span class="nc" id="L54">				accountNo);</span>
+	}
+
+	@Override
+	public List&lt;Customer&gt; getAllCustomers() {
+		// TODO Auto-generated method stub
+<span class="nc" id="L60">		return jdbcTemplate.query(selectAllCustomersQuery, this::mapRowToCustomer);</span>
+	}
+
+	@Override
+	public boolean updateCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+<span class="nc bnc" id="L66" title="All 2 branches missed.">		return jdbcTemplate.update(updateCustomerQuery, customer.getContactNo(),</span>
+<span class="nc" id="L67">				customer.getAccountNo())&gt;0;</span>
+	}
+
+	@Override
+	public boolean deleteCustomer(long accountNo) {
+		// TODO Auto-generated method stub
+<span class="nc bnc" id="L73" title="All 2 branches missed.">		return jdbcTemplate.update(deleteCustomerQuery, accountNo)&gt;0;</span>
+	}
+	
+	
+	private Customer mapRowToCustomer(ResultSet rs, int rowNum) throws SQLException {
+<span class="nc" id="L78">		Customer customer = customerProvider.getObject(); </span>
+<span class="nc" id="L79">	    FullName fullName = fullNameProvider.getObject();</span>
+<span class="nc" id="L80">		customer.setFullName(fullName);</span>
+<span class="nc" id="L81">		customer.setAccountNo(rs.getLong(&quot;account_no&quot;));</span>
+<span class="nc" id="L82">		customer.getFullName().setFirstName(rs.getString(&quot;first_name&quot;));</span>
+<span class="nc" id="L83">		customer.getFullName().setMiddleName(rs.getString(&quot;middle_name&quot;));</span>
+<span class="nc" id="L84">		customer.getFullName().setLastName(rs.getString(&quot;last_name&quot;));</span>
+<span class="nc" id="L85">		customer.setEmail(rs.getString(&quot;email&quot;));</span>
+<span class="nc" id="L86">		customer.setPassword(rs.getString(&quot;password&quot;));</span>
+<span class="nc" id="L87">		customer.setContactNo(rs.getLong(&quot;contact_no&quot;));</span>
+<span class="nc" id="L88">		return customer;</span>
+		
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
