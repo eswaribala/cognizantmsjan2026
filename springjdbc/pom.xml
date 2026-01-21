@@ -182,13 +182,24 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-                    <execution>
-                        <id>generate-code-coverage-report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
+                     <!-- Generate Report -->
+				        <execution>
+				            <id>report</id>
+				            <phase>test</phase>
+				            <goals>
+				                <goal>report</goal>
+				            </goals>
+				            <configuration>
+				                <excludes>
+				                    <!-- Keep empty to include models package -->
+				                </excludes>
+				                <includes>
+				                    <!-- Explicitly include your models -->
+				                    <include>com/cognizant/banking/models/**</include>
+				                    <include>**/*</include>
+				                </includes>
+				            </configuration>
+				        </execution>
 
                 </executions>
             </plugin>
