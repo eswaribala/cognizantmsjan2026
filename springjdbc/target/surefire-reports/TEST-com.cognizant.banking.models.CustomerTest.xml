@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cognizant.banking.models.CustomerTest" time="0.432" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cognizant.banking.models.CustomerTest" time="1.226" tests="0" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\param\AppData\Local\Temp\surefire3142705096179696398\surefirebooter10493097989964902703.jar C:\Users\param\AppData\Local\Temp\surefire3142705096179696398 2026-01-20T15-34-49_654-jvmRun1 surefire1416820891635481820tmp surefire_015089227840424172307tmp"/>
+    <property name="sun.java.command" value="C:\Users\param\AppData\Local\Temp\surefire8290568487355791885\surefirebooter4525993612837110742.jar C:\Users\param\AppData\Local\Temp\surefire8290568487355791885 2026-01-21T10-01-23_541-jvmRun1 surefire10288694906056647590tmp surefire_0656215379780361804tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\cognizantmsjan2026\springjdbc\target\test-classes;E:\cognizantmsjan2026\springjdbc\target\classes;C:\Users\param\.m2\repository\org\springframework\spring-core\7.0.3\spring-core-7.0.3.jar;C:\Users\param\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar;C:\Users\param\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\param\.m2\repository\org\springframework\spring-context\7.0.3\spring-context-7.0.3.jar;C:\Users\param\.m2\repository\org\springframework\spring-beans\7.0.3\spring-beans-7.0.3.jar;C:\Users\param\.m2\repository\org\springframework\spring-expression\7.0.3\spring-expression-7.0.3.jar;C:\Users\param\.m2\repository\io\micrometer\micrometer-observation\1.16.2\micrometer-observation-1.16.2.jar;C:\Users\param\.m2\repository\io\micrometer\micrometer-commons\1.16.2\micrometer-commons-1.16.2.jar;C:\Users\param\.m2\repository\org\projectlombok\lombok\1.18.42\lombok-1.18.42.jar;C:\Users\param\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\param\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\param\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\param\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\param\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\param\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\param\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\param\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\param\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0\jakarta.annotation-api-3.0.0.jar;C:\Users\param\.m2\repository\org\springframework\spring-aop\7.0.3\spring-aop-7.0.3.jar;C:\Users\param\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\param\.m2\repository\com\zaxxer\HikariCP\7.0.2\HikariCP-7.0.2.jar;C:\Users\param\.m2\repository\org\springframework\spring-jdbc\7.0.3\spring-jdbc-7.0.3.jar;C:\Users\param\.m2\repository\org\springframework\spring-tx\7.0.3\spring-tx-7.0.3.jar;C:\Users\param\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\param\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\param\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.2\junit-jupiter-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.2\junit-jupiter-api-6.0.2.jar;C:\Users\param\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-commons\6.0.2\junit-platform-commons-6.0.2.jar;C:\Users\param\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\param\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.2\junit-jupiter-engine-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-engine\6.0.2\junit-platform-engine-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.2\junit-jupiter-params-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-suite\6.0.2\junit-platform-suite-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-suite-api\6.0.2\junit-platform-suite-api-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-suite-engine\6.0.2\junit-platform-suite-engine-6.0.2.jar;C:\Users\param\.m2\repository\org\junit\platform\junit-platform-launcher\6.0.2\junit-platform-launcher-6.0.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\param\AppData\Local\Temp\surefire3142705096179696398\surefirebooter10493097989964902703.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\param\AppData\Local\Temp\surefire8290568487355791885\surefirebooter4525993612837110742.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
@@ -59,22 +59,4 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.146"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.003"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.002"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.002"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testGettersAndSetters(long,String,String,String,String,String, long)" classname="com.cognizant.banking.models.CustomerTest" time="0.004"/>
-  <testcase name="testCustomerNotNull" classname="com.cognizant.banking.models.CustomerTest" time="0.002"/>
-  <testcase name="testCustomerNotNull" classname="com.cognizant.banking.models.CustomerTest" time="0.002"/>
-  <testcase name="testCustomerNotNull" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="testCustomerNotNull" classname="com.cognizant.banking.models.CustomerTest" time="0.002"/>
-  <testcase name="testSavingsAccountExceptionNegative" classname="com.cognizant.banking.models.CustomerTest" time="0.003"/>
-  <testcase name="TestGettersAndSettersNegative(long)[1]" classname="com.cognizant.banking.models.CustomerTest" time="0.005"/>
-  <testcase name="TestGettersAndSettersNegative(long)[2]" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
-  <testcase name="TestGettersAndSettersNegative(long)[3]" classname="com.cognizant.banking.models.CustomerTest" time="0.001"/>
 </testsuite>

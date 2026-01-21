@@ -2,5 +2,5 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 springjdbc,com.cognizant.banking.services,CustomerService,9,0,0,0,3,0,2,0,2,0
 springjdbc,com.cognizant.banking.models,Customer,0,4,0,0,0,1,0,1,0,1
 springjdbc,com.cognizant.banking.configurations,AppConfig,30,0,0,0,8,0,2,0,2,0
-springjdbc,com.cognizant.banking.utils,CustomerApp,109,0,0,0,20,0,3,0,3,0
+springjdbc,com.cognizant.banking.utils,CustomerApp,109,79,0,2,20,15,3,2,3,1
 springjdbc,com.cognizant.banking.repositories,CustomerRepositoryImpl,175,0,6,0,24,0,10,0,7,0

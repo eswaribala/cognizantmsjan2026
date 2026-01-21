@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.cognizant.banking.models.CustomerTest
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 s - in com.cognizant.banking.models.CustomerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.226 s - in com.cognizant.banking.models.CustomerTest

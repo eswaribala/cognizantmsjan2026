@@ -1,0 +1,4 @@
+# Created at 2026-01-21T10:01:23.973
+Boot Manifest-JAR contains absolute paths in classpath 'E:\cognizantmsjan2026\springjdbc\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
