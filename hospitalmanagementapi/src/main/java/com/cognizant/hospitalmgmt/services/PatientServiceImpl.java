@@ -59,13 +59,24 @@ public class PatientServiceImpl implements PatientService {
 	@Override
 	public Patient updatePatient(String adharCardNo, long phoneNumber, String email) {
 		// TODO Auto-generated method stub
-		return null;
+		if(patientRepository.existsById(adharCardNo) && email!=null && phoneNumber!=0) {
+			Patient patient=patientRepository.findById(adharCardNo).get();
+			patient.setContactNumber(phoneNumber);
+			patient.setEmail(email);
+			return patientRepository.save(patient);
+		}else
+			throw new PatientNotFoundException("Patient not found to update");
 	}
 
 	@Override
 	public boolean deletePatient(String adharCardNo) {
+		boolean status=false;
 		// TODO Auto-generated method stub
-		return false;
+		if(patientRepository.existsById(adharCardNo)) {
+			patientRepository.deleteById(adharCardNo);
+			status=true;
+		}
+		return status;
 	}
 
 	@Override
