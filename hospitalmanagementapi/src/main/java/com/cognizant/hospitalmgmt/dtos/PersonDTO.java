@@ -2,7 +2,7 @@ package com.cognizant.hospitalmgmt.dtos;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import com.cognizant.hospitalmgmt.models.FullName;
+
 import com.cognizant.hospitalmgmt.models.Gender;
 
 import lombok.AllArgsConstructor;

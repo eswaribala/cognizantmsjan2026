@@ -21,13 +21,15 @@ public class PatientController {
     
     @PostMapping("/v1.0")
     public ResponseEntity<GenericMessage> addPatient(@RequestBody PatientDTO patientDTO) {
-		
+		//mapping DTO to entity
+    	FullName fullName=FullName.builder()
+    			.firstName(patientDTO.getFullName().getFirstName())
+    			.lastName(patientDTO.getFullName().getLastName())
+    			.build();
+    	
     	  	Patient patient=Patient.builder()
     			.adharCardNo(patientDTO.getAdharCardNo()) 
-    			.fullName(patientDTO.getFullName().builder()
-    					.firstName(patientDTO.getFullName().getFirstName())
-    					.lastName(patientDTO.getFullName().getLastName())
-    					.build())
+    			.fullName(fullName)
     			.contactNumber(patientDTO.getContactNumber())
 				.dateOfBirth(patientDTO.getDateOfBirth())
 				.email(patientDTO.getEmail())
