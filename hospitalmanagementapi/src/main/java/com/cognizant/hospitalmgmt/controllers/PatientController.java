@@ -13,6 +13,8 @@ import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Patient;
 import com.cognizant.hospitalmgmt.services.PatientService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/patients")
 public class PatientController {
@@ -20,7 +22,7 @@ public class PatientController {
 	private PatientService patientService;
     
     @PostMapping("/v1.0")
-    public ResponseEntity<GenericMessage> addPatient(@RequestBody PatientDTO patientDTO) {
+    public ResponseEntity<GenericMessage> addPatient(@Valid @RequestBody PatientDTO patientDTO) {
 		//mapping DTO to entity
     	FullName fullName = FullName.builder()
 				.firstName(patientDTO.getFullName().getFirstName())

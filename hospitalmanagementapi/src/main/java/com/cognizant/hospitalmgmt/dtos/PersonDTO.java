@@ -7,6 +7,7 @@ import org.hibernate.validator.constraints.Length;
 import com.cognizant.hospitalmgmt.models.Gender;
 
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,7 +31,7 @@ public abstract class PersonDTO implements Serializable {
 	private LocalDate dateOfBirth;
 
 	private long contactNumber;
-	
+	@Pattern(regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$", message = "Invalid email format")
 	private String email;	
  
 }
