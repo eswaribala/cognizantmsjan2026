@@ -66,8 +66,8 @@ public class PatientController {
     
     @PatchMapping("/v1.0")
     public ResponseEntity<GenericMessage> updatePatientByEmailAndPhoneNumber(
-    		@RequestParam("adharCardNo") String adharCardNo,
-    		@RequestParam("contactNo") long contactNo,@RequestParam("email") String email) {
+    		@RequestParam String adharCardNo,
+    		@RequestParam long contactNo,@RequestParam String email) {
     		Patient updatedPatient = patientService.updatePatient(adharCardNo, contactNo, email);
     	    return ResponseEntity.status(HttpStatus.ACCEPTED)
 					.body(new GenericMessage("Patient updated successfully with Adhar Card No: " 
@@ -76,7 +76,7 @@ public class PatientController {
     
     @DeleteMapping("/v1.0")
     public ResponseEntity<GenericMessage> deletePatientByAdharCardNo(
-			@RequestParam("adharCardNo") String adharCardNo) {
+			@RequestParam String adharCardNo) {
 			boolean isDeleted = patientService.deletePatient(adharCardNo);
 			if(isDeleted) {
 			    return ResponseEntity.status(HttpStatus.ACCEPTED)
