@@ -1,5 +1,6 @@
 package com.cognizant.hospitalmgmt.exceptions;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,11 +27,18 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<GenericMessage>handleArgumentException(MethodArgumentNotValidException ex) {
 		Map<String, String> response = new HashMap<>();
 		Map<String, String> errors = new HashMap<>();
-		String fieldName,errorMessage;
+		
 		ex.getBindingResult().getFieldErrors().forEach(error -> {
-			 fieldName = ((FieldError) error).getField().toString();
-	         errorMessage = error.getDefaultMessage();
+			 String fieldName = ((FieldError) error).getField().toString();
+	         String errorMessage = error.getDefaultMessage();
+	         errors.put(fieldName, errorMessage);
+	        
 		});
 		
+		response.put("Validation Errors", errors.toString());
+		response.put("Total Errors", String.valueOf(errors.size()));
+		response.put("TimeStamp", LocalDateTime.now().toString());
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+				.body(new GenericMessage<>(null, response.toString()));
 	}
 }
