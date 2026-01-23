@@ -3,6 +3,7 @@ package com.cognizant.hospitalmgmt.models;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Embeddable
+@Builder
 public class FullName {
 	@Column(name = "first_name", nullable = false,length = 50)
 	private String firstName;
