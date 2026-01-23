@@ -8,7 +8,8 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 @Component
 public class SwaggerConfiguration implements RepositoryRestConfigurer {
     @Override
-    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
+    public void configureRepositoryRestConfiguration
+    (RepositoryRestConfiguration config, CorsRegistry cors) {
           config.setExposeRepositoryMethodsByDefault(false);
     }
 }
