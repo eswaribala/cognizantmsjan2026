@@ -22,25 +22,24 @@ public class PatientController {
     @PostMapping("/v1.0")
     public ResponseEntity<GenericMessage> addPatient(@RequestBody PatientDTO patientDTO) {
 		//mapping DTO to entity
-    	FullName fullName=FullName.builder()
-    			.firstName(patientDTO.getFullName().getFirstName())
-    			.lastName(patientDTO.getFullName().getLastName())
-    			.build();
-    	
-    	  	Patient patient=Patient.builder()
-    			.adharCardNo(patientDTO.getAdharCardNo()) 
+    	FullName fullName = FullName.builder()
+				.firstName(patientDTO.getFullName().getFirstName())
+				.lastName(patientDTO.getFullName().getLastName())
+				.build();
+    	Patient patient = Patient.builder()
+    			.adharCardNo(patientDTO.getAdharCardNo())
     			.fullName(fullName)
+    			.dateOfBirth(patientDTO.getDateOfBirth())
+    			.email(patientDTO.getEmail())
     			.contactNumber(patientDTO.getContactNumber())
-				.dateOfBirth(patientDTO.getDateOfBirth())
-				.email(patientDTO.getEmail())
-				.ailment(patientDTO.getAilment())
-				.gender(patientDTO.getGender())
-				.occupation(patientDTO.getOccupation())			    
+    			.gender(patientDTO.getGender())
+    			.ailment(patientDTO.getAilment())
+    			.occupation(patientDTO.getOccupation())
     			.build();
-    	 Patient patientResponse=patientService.addPatient(patient);
-    	 return ResponseEntity.status(HttpStatus.CREATED)
-				 .body(new GenericMessage("Patient added successfully with Adhar Card No: "
-    	 +patientResponse.getAdharCardNo(),null));
+    	Patient savedPatient = patientService.addPatient(patient);
+    	return ResponseEntity.status(HttpStatus.CREATED)
+				.body(new GenericMessage("Patient added successfully with Adhar Card No: " 
+    	+ savedPatient.getAdharCardNo(),null));
 	}
     
     
