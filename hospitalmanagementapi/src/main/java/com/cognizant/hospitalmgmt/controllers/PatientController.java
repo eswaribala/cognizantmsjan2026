@@ -56,17 +56,21 @@ public class PatientController {
     	+patientResponse,null));
 	}
     @GetMapping("/v1.0")
-    public List<Patient> getAllPatients() {
-    			return patientService.getAllPatients();
+    public List<PatientResponse> getAllPatients() {
+    	List<Patient> patients=	patientService.getAllPatients();
+    	List<PatientResponse> patientResponses = patientMapper.toDTOs(patients);
+    	return patientResponses;
+    	
     }
     
     @GetMapping("/v1.0/{adharCardNo}")
 	public ResponseEntity<GenericMessage> getPatientByAdharCardNo(@PathParam("adharCardNo") String adharCardNo) {
 		
 		Patient patient = patientService.getPatientByAdharCardNo(adharCardNo);
+		PatientResponse patientResponse = patientMapper.toDTOs(patient);
     	return ResponseEntity.status(HttpStatus.ACCEPTED)
 				.body(new GenericMessage("Patient Retrieved successfully with Adhar Card No: " 
-    	+ patient,null));
+    	+ patientResponse,null));
 	}
     
     @PatchMapping("/v1.0")
