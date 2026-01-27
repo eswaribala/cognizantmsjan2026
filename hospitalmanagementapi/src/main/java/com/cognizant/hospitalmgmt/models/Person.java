@@ -6,6 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import com.cognizant.hospitalmgmt.facades.AdharCardId;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -32,6 +33,7 @@ public abstract class Person implements Serializable {
 	@Id
 	@Column(name = "adhar_card_no", nullable = false, length = 12)
 	@AdharCardId
+	@Schema(hidden = true)
 	private String adharCardNo;
 	@Embedded
 	private FullName fullName;

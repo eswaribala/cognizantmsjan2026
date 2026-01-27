@@ -21,8 +21,7 @@ import lombok.experimental.SuperBuilder;
 
 public abstract class PersonDTO implements Serializable {
 	
-	@Length(min = 12, max = 12, message = "Adhar Card Number must be 12 digits")
-	private String adharCardNo;
+	
 	
 	private FullName fullName;
 	

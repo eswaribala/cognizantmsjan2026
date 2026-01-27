@@ -35,4 +35,5 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Min"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotNull"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotEmpty"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.media.Schema"/>
 </qualifiedTypeNameHistroy>

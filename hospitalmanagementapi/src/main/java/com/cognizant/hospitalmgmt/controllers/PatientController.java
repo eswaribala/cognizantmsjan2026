@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.cognizant.hospitalmgmt.dtos.GenericMessage;
 import com.cognizant.hospitalmgmt.dtos.PatientDTO;
+import com.cognizant.hospitalmgmt.dtos.PatientResponse;
+import com.cognizant.hospitalmgmt.mappers.PatientMapper;
 import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Patient;
 import com.cognizant.hospitalmgmt.services.PatientService;
@@ -27,6 +29,8 @@ import jakarta.websocket.server.PathParam;
 public class PatientController {
     @Autowired
 	private PatientService patientService;
+    @Autowired
+    private PatientMapper patientMapper;
     
     @PostMapping("/v1.0")
     public ResponseEntity<GenericMessage> addPatient(@Valid @RequestBody PatientDTO patientDTO) {
@@ -36,7 +40,7 @@ public class PatientController {
 				.lastName(patientDTO.getFullName().getLastName())
 				.build();
     	Patient patient = Patient.builder()
-    			.adharCardNo(patientDTO.getAdharCardNo())
+    			
     			.fullName(fullName)
     			.dateOfBirth(patientDTO.getDateOfBirth())
     			.email(patientDTO.getEmail())
@@ -46,9 +50,10 @@ public class PatientController {
     			.occupation(patientDTO.getOccupation())
     			.build();
     	Patient savedPatient = patientService.addPatient(patient);
+    	PatientResponse patientResponse = patientMapper.toDTOs(savedPatient);
     	return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new GenericMessage("Patient added successfully with Adhar Card No: " 
-    	+ savedPatient.getAdharCardNo(),null));
+    	+patientResponse,null));
 	}
     @GetMapping("/v1.0")
     public List<Patient> getAllPatients() {
@@ -60,8 +65,8 @@ public class PatientController {
 		
 		Patient patient = patientService.getPatientByAdharCardNo(adharCardNo);
     	return ResponseEntity.status(HttpStatus.ACCEPTED)
-				.body(new GenericMessage("Patient added successfully with Adhar Card No: " 
-    	+ patient.getAdharCardNo(),null));
+				.body(new GenericMessage("Patient Retrieved successfully with Adhar Card No: " 
+    	+ patient,null));
 	}
     
     @PatchMapping("/v1.0")
