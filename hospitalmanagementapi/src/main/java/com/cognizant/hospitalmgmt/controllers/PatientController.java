@@ -2,6 +2,7 @@ package com.cognizant.hospitalmgmt.controllers;
 
 import java.util.List;
 
+import com.cognizant.hospitalmgmt.dtos.PatientResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.cognizant.hospitalmgmt.dtos.GenericMessage;
 import com.cognizant.hospitalmgmt.dtos.PatientDTO;
-import com.cognizant.hospitalmgmt.dtos.PatientResponse;
 import com.cognizant.hospitalmgmt.mappers.PatientMapper;
 import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Patient;

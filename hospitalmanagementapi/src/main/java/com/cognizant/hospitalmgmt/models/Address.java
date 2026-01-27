@@ -35,7 +35,7 @@ public class Address {
 	private String state;
 	@Column(name = "zip_code", nullable = false, length = 10)
 	private String zipCode;
-	@ManyToOne(optional = false,cascade = CascadeType.ALL,fetch =FetchType.LAZY )
+	@ManyToOne(optional = false,cascade = CascadeType.MERGE,fetch =FetchType.LAZY )
 	@JoinColumn(foreignKey = @ForeignKey(name = "adharCardNo"),name = "person_adhar_card_no")
 	private Person person;
 

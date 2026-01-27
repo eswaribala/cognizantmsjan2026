@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AddressDTO {
 	
-	private Long id;
+	
 	
 	private String houseNumber;
 	
@@ -21,6 +21,6 @@ public class AddressDTO {
 	private String state;
 	
 	private String zipCode;
-	private PersonDTO person;
+	//private PersonDTO person;
 
 }

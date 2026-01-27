@@ -29,7 +29,7 @@ import lombok.experimental.SuperBuilder;
 @Table(name = "person")
 @SuperBuilder
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Person implements Serializable {
+public  class Person implements Serializable {
 	@Id
 	@Column(name = "adhar_card_no", nullable = false, length = 12)
 	@AdharCardId

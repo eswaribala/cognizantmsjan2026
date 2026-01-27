@@ -2,10 +2,11 @@ package com.cognizant.hospitalmgmt.services;
 
 import java.util.List;
 
+import com.cognizant.hospitalmgmt.exceptions.PersonNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cognizant.hospitalmgmt.exceptions.PersonNotFoundException;
+
 import com.cognizant.hospitalmgmt.models.Address;
 import com.cognizant.hospitalmgmt.models.Person;
 import com.cognizant.hospitalmgmt.repositories.AddressRepository;
@@ -36,7 +37,7 @@ public class AddressImpl implements AddressService {
 	@Override
 	public Address getAddressById(String adharCardNo, Long addressId) {
 		// TODO Auto-generated method stub
-		return addressRepository.findByIds(adharCardNo, addressId);
+		return addressRepository.findByIdAndPersonAdharCardNo(addressId,adharCardNo).orElseThrow(()->new RuntimeException("Address not found"));
 	}
 
 	@Override
@@ -46,7 +47,7 @@ public class AddressImpl implements AddressService {
 				.orElseThrow(()->new PersonNotFoundException
 						("Person not found with Adhar Card No: " + adharCardNo));
 	     Address existingAddress = 
-				addressRepository.findByIds(adharCardNo, addressId);
+				addressRepository.findByIdAndPersonAdharCardNo(addressId,adharCardNo).orElseThrow(()->new RuntimeException("Address not found"));
 		existingAddress.setStreetName(address.getStreetName());
 		existingAddress.setCity(address.getCity());
 		existingAddress.setState(address.getState());
