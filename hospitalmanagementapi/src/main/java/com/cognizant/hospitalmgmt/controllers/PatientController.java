@@ -78,9 +78,10 @@ public class PatientController {
     		@RequestParam String adharCardNo,
     		@RequestParam long contactNo,@RequestParam String email) {
     		Patient updatedPatient = patientService.updatePatient(adharCardNo, contactNo, email);
-    	    return ResponseEntity.status(HttpStatus.ACCEPTED)
+    	    PatientResponse patientResponse = patientMapper.toDTOs(updatedPatient);
+    		return ResponseEntity.status(HttpStatus.ACCEPTED)
 					.body(new GenericMessage("Patient updated successfully with Adhar Card No: " 
-			+ updatedPatient.getAdharCardNo(),null));
+			+ patientResponse,null));
     }
     
     @DeleteMapping("/v1.0")
