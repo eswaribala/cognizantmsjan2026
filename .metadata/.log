@@ -7685,3 +7685,60 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.lsp4e 1 0 2026-01-27 15:02:13.550
 !MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-27 15:09:31.548
+!MESSAGE [Info]	[AutoModelService] Auto model cache cleared due to token update
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-27 15:10:06.434
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-27 15:10:06.448
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-27 15:10:06.462
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-27 15:10:06.477
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.117
+!MESSAGE [Info] Document is null for editor: AddressMapperImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.291
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/target/generated-sources/annotations/com/cognizant/hospitalmgmt/mappers/AddressMapperImpl.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.330
+!MESSAGE [Info] Document is null for editor: AddressDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.346
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/dtos/AddressDTO.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.370
+!MESSAGE [Info] Document is null for editor: AddressResponse.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.386
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/dtos/AddressResponse.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.412
+!MESSAGE [Info] Document is null for editor: AddressController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.429
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/controllers/AddressController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.460
+!MESSAGE [Info] Document is null for editor: AddressMapper.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.476
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/mappers/AddressMapper.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.515
+!MESSAGE [Info] Document is null for editor: PersonMapper.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.532
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/mappers/PersonMapper.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.560
+!MESSAGE [Info] Document is null for editor: Person.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-27 15:12:22.575
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmsjan2026/hospitalmanagementapi/src/main/java/com/cognizant/hospitalmgmt/models/Person.java
