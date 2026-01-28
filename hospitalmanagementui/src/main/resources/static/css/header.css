@@ -14,12 +14,12 @@
 }
 
 h1{
-	background-color: radial-gradient(circle, red,orange,navy,white, brown);
+    background-image: radial-gradient(black,blueviolet,goldenrod,yellow, pink,darkslateblue,lawngreen,orange);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: xx-large;
     font-weight: bold;
+    color: transparent;
     text-align: center;
-    font-size: 24px;
-    font-family: 'Lucida Calligraphy, Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: "Lucida Calligraphy"
+
 }
