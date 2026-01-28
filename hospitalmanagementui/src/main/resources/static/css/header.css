@@ -1,16 +1,25 @@
-.header{
-	
-	border: 2px solid black;
+.header{	
+	/* border: 2px solid black; */
     color: navy;
     padding: 15px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     display: flex;
-     align-items: center;          /* vertically center items */
+    align-items: center;          /* vertically center items */
     justify-content: left;        /* title after the logo */
-    gap: 20px;                    /* spacing between logo and title */
-
+    gap: 40px;                   /* spacing between logo and title */
     height: 80px;
     width: 100%;
+}
+
+h1{
+	background-color: radial-gradient(circle, red,orange,navy,white, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lucida-sans', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
