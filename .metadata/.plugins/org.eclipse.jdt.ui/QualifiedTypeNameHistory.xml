@@ -38,4 +38,5 @@
     <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.media.Schema"/>
     <fullyQualifiedTypeName name="org.mapstruct.Mapper"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 </qualifiedTypeNameHistroy>
