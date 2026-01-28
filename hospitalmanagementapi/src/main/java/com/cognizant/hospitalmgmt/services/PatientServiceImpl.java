@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.cognizant.hospitalmgmt.exceptions.PatientNotFoundException;
 import com.cognizant.hospitalmgmt.exceptions.PatientNullException;
@@ -14,13 +15,16 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
+
 @Service
+@Transactional(readOnly = true)
 public class PatientServiceImpl implements PatientService {
     @Autowired 
 	private PatientRepository patientRepository;
     @Autowired
     private EntityManager entityManager;
 	@Override
+	@Transactional(rollbackFor = PatientNullException.class)
 	public Patient addPatient(Patient patient) {
 		// TODO Auto-generated method stub
 		if(patient!=null) {
@@ -57,6 +61,7 @@ public class PatientServiceImpl implements PatientService {
 	}
 
 	@Override
+	@Transactional(rollbackFor = PatientNotFoundException.class)
 	public Patient updatePatient(String adharCardNo, long phoneNumber, String email) {
 		// TODO Auto-generated method stub
 		if(patientRepository.existsById(adharCardNo) && email!=null && phoneNumber!=0) {
@@ -69,6 +74,7 @@ public class PatientServiceImpl implements PatientService {
 	}
 
 	@Override
+	@Transactional
 	public boolean deletePatient(String adharCardNo) {
 		boolean status=false;
 		// TODO Auto-generated method stub

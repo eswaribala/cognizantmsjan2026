@@ -31,9 +31,12 @@ public class AddressController {
 	private AddressMapper addressMapper;
 	@PostMapping("/v1.0/{adharCardNo}")
 	public ResponseEntity<GenericMessage> addAddress(@RequestBody AddressDTO addressDTO,@PathParam("adharCardNo") String adharCardNo){
+		//dto to entity
 		Address address=addressMapper.dtotoentity(addressDTO);
 		Address savedAddress=addressService.addAddress(adharCardNo,address);
-		GenericMessage genericMessage=new GenericMessage("Address added successfully"+savedAddress,null);
+		//entity to dto
+		AddressResponse addressResponse=addressMapper.entitytodto(savedAddress);
+		GenericMessage genericMessage=new GenericMessage("Address added successfully"+addressResponse,null);
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(genericMessage);
 	}
