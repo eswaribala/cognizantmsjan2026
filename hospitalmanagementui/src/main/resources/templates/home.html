@@ -29,46 +29,51 @@
                 </div>
 
                 <div class="card-body">
-                    <form>
+                    <form th:object="${patient}" th:action="@{/savePatient}" method="post">
 
                         <div class="mb-3">
                            
-                            <input type="text" class="form-control" placeholder="First Name">
+                            <input type="text" th:field="*{fullName.firstName}" class="form-control" placeholder="First Name">
                         </div>
 
                         <div class="mb-3">
                           
-                            <input type="text" class="form-control" placeholder="Last Name">
+                            <input type="text" th:field="*{fullName.lastName}" class="form-control" placeholder="Last Name">
                         </div>
 
                         <div class="mb-3">
                             
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" th:field="*{email}" class="form-control" placeholder="Email">
                         </div>
 
                         <div class="mb-3">
                            
-                            <input type="number" class="form-control" placeholder="Contact No">
+                            <input type="number" th:field="*{contactNumber}" class="form-control" placeholder="Contact No">
                         </div>
 
                         <div class="mb-3">
                            
-                            <input type="text" class="form-control" placeholder="Gender">
+                           <select th:field="*{gender}" class="form-control">
+							    <option value="">Select Gender</option>
+							    <option value="MALE">Male</option>
+							    <option value="FEMALE">Female</option>
+							    <option value="OTHER">Female</option>
+							</select>       
+						</div>
+
+                        <div class="mb-3">
+                           
+                            <input type="date" th:field="*{dateOfBirth}" class="form-control">
                         </div>
 
                         <div class="mb-3">
                            
-                            <input type="date" class="form-control">
-                        </div>
-
-                        <div class="mb-3">
-                           
-                            <input type="text" class="form-control" placeholder="Ailment">
+                            <input type="text" th:field="*{ailment}" class="form-control" placeholder="Ailment">
                         </div>
 
                         <div class="mb-3">
                             
-                            <input type="text" class="form-control" placeholder="Occupation">
+                            <input type="text" th:field="*{occupation}" class="form-control" placeholder="Occupation">
                         </div>
 
                         <div class="d-grid">
