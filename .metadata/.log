@@ -6662,3 +6662,860 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-28 17:01:01.913
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///D:/cognizantmsjan2026/hospitalmanagementui/src/main/resources/templates/fragments/patientStatus.html
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-28 17:09:00.133
+!MESSAGE [Info] Language ID not found for extension: properties
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:02.245
+!MESSAGE [Info]	[default] Context provider relatedFilesShim exceeded time budget of 150ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:03.385
+!MESSAGE [Info]	[fetchCompletions] Request 77106ac1-a307-4c34-b319-dac1a27806da at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1137.793500000611ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:03.675
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:05.070
+!MESSAGE [Info]	[fetchCompletions] Request 4c738ebb-7fd0-4a63-834e-bd0827dfce71 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 422.7752000000328ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:05.237
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:05.632
+!MESSAGE [Info]	[fetchCompletions] Request 4906a82d-8bfa-405c-b3ae-bafe66ef63bf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 375.3415000010282ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:05.633
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:16.237
+!MESSAGE [Info]	[fetchCompletions] Request 23795ed6-b6e3-4862-aa46-76f72bf8414e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 414.2824999988079ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:16.311
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:17.435
+!MESSAGE [Info]	[fetchCompletions] Request 174c6a93-3323-464b-ac1d-5cfd39a45f0b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 515.6551999989897ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:17.437
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:17.823
+!MESSAGE [Info]	[fetchCompletions] Request 8e12642e-4458-48f0-bf1d-51dd8b0fbaa2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 372.77969999983907ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:17.824
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:23.225
+!MESSAGE [Info]	[fetchCompletions] Request 76756eb7-5b79-4925-abb5-ec40d33244f0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 485.3485000003129ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:23.294
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:24.157
+!MESSAGE [Info]	[fetchCompletions] Request e93ae962-d8bb-4671-81ab-6efc8b6ea10f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 790.833599999547ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:24.157
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:25.455
+!MESSAGE [Info]	[fetchCompletions] Request 61cb8c37-f283-4a66-a1fe-ed83a5bd29a2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 412.9432999994606ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:09:25.530
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:09:27.707
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:09:27.707
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:09:27.708
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:09:27.708
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:08.952
+!MESSAGE [Info]	[fetchCompletions] Request 7624b5d7-feb2-4ae8-be3b-ee858ffb375e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 498.5912999995053ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:08.969
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:09.368
+!MESSAGE [Info]	[fetchCompletions] Request ec2b05e4-9a54-45fe-a5f3-a1db98ccc972 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 387.88120000064373ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:09.439
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:09.816
+!MESSAGE [Info]	[fetchCompletions] Request 3f61c159-9b4a-457e-a313-8102e5966db4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 367.6622000001371ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:09.823
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:10.305
+!MESSAGE [Info]	[fetchCompletions] Request c81a3129-e02a-4a4f-9891-f0893d4f4ff1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 407.1381999999285ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:10.369
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:10.874
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:10:10.874
+!MESSAGE [Info]	[fetchCompletions] Request f0d5e3e3-4f35-489c-b2ba-c0e0a2e18864 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 497.42349999956787ms
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:10:11.319
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:10:11.319
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:10:11.320
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:10:11.320
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:35.872
+!MESSAGE [Info]	[fetchCompletions] Request b7464a0d-7ef1-480e-ac10-cb32e0cc7882 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 628.1620000004768ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:35.878
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:36.358
+!MESSAGE [Info]	[fetchCompletions] Request b22391dc-6146-477c-9fd3-e2ab2c8d5e10 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 434.9212000016123ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:36.359
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:36.942
+!MESSAGE [Info]	[fetchCompletions] Request d8d9865f-00a5-4e24-bf6e-b839f23fccd5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 435.2943000011146ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:37.273
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:37.901
+!MESSAGE [Info]	[fetchCompletions] Request 74452e62-3793-4801-9df9-ff804a3ab097 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 520.478900000453ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:37.901
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:39.236
+!MESSAGE [Info]	[fetchCompletions] Request 4d7046fb-7136-4fe5-8906-e1a3189a25a4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 461.21069999970496ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:39.358
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:39.832
+!MESSAGE [Info]	[fetchCompletions] Request 7b5bbd41-a829-4c73-a23b-daa6ae0547c1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 461.3941000010818ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:39.833
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:40.862
+!MESSAGE [Info]	[fetchCompletions] Request 382b2c40-31e4-4421-8820-8836ce02f9fc at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 408.216099999845ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:41.021
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:41.459
+!MESSAGE [Info]	[fetchCompletions] Request 3cbb561f-9676-47c9-8e28-29f070562ed7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 427.11470000073314ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:41.461
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:46.805
+!MESSAGE [Info]	[fetchCompletions] Request a3062abe-f907-4df7-9875-6305ba722c28 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 451.8714000005275ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:46.888
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:47.603
+!MESSAGE [Info]	[fetchCompletions] Request 4a32e630-19c6-440d-8a31-3be36ac7644b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 467.23179999925196ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:47.708
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:48.724
+!MESSAGE [Info]	[fetchCompletions] Request 4b522099-6d34-4832-a7ee-ba79165215ad at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 412.44319999963045ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:48.786
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:49.394
+!MESSAGE [Info]	[fetchCompletions] Request 8786becc-17a7-4645-a48c-63d9f43cbc1c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 412.8108999989927ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:49.493
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:55.661
+!MESSAGE [Info]	[fetchCompletions] Request 2e906be8-29c7-44ab-8c7f-d725a2ebf76d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 456.38360000029206ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:55.728
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:56.150
+!MESSAGE [Info]	[fetchCompletions] Request 8dede20c-89a3-468b-808b-c083c972aa15 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 411.4981999993324ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:56.218
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:56.972
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:58.440
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:59.028
+!MESSAGE [Info]	[fetchCompletions] Request cc759e43-7baf-4711-9c26-a0ac03f7d305 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 730.5809000004083ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:11:59.029
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:11:59.387
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:11:59.387
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:11:59.387
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:11:59.387
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:00.509
+!MESSAGE [Info]	[fetchCompletions] Request 12e5619f-fa84-4969-8360-3848e248f076 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 917.6583999991417ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:00.597
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:01.046
+!MESSAGE [Info]	[fetchCompletions] Request c025a64c-3f73-4430-bb7c-67dbb0f07903 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 433.0104999989271ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:01.128
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:01.622
+!MESSAGE [Info]	[fetchCompletions] Request 1c792418-1850-47e4-a2d1-3e3722d493d3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 333.0690000001341ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:01.808
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:02.178
+!MESSAGE [Info]	[fetchCompletions] Request b87b90b6-ebff-4445-b6e4-3b4789371253 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 351.42119999974966ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:02.181
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:02.734
+!MESSAGE [Info]	[fetchCompletions] Request c969e2ae-476d-4458-b057-de1b2ce1264f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 348.7693000007421ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:02.959
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:03.624
+!MESSAGE [Info]	[fetchCompletions] Request 1c17e90c-8193-4740-bf95-1886661c226a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 322.99390000104904ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:03.629
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:04.575
+!MESSAGE [Info]	[fetchCompletions] Request 2611cd6c-8a51-4a0d-8764-d60ac802b53b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 351.311700001359ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:04.741
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:05.103
+!MESSAGE [Info]	[fetchCompletions] Request c17197c4-1147-430c-9cef-84441e1c4676 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 349.06100000068545ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:05.103
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:05.499
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:07.197
+!MESSAGE [Info]	[fetchCompletions] Request 98916ba9-b598-4b9c-bc00-8424c099b8dd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 448.021899998188ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:07.253
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:08.132
+!MESSAGE [Info]	[fetchCompletions] Request c180b5d0-eeb2-441d-ac29-19a54902ac31 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 371.2286999989301ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:08.330
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:08.829
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:08.844
+!MESSAGE [Info]	[fetchCompletions] Request 0211c458-1b9f-44ad-a0d0-4ba306dba0cf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 330.30000000074506ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:08.904
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:09.410
+!MESSAGE [Info]	[fetchCompletions] Request db1fd677-d11d-4fdc-8614-88a5ff95e15a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 490.8805999998003ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:14:09.485
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:15:09.806
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:15:09.807
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:15:09.808
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:15:09.809
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:15:39.481
+!MESSAGE [Info]	[fetchCompletions] Request 97a31719-c714-4706-b806-7842b9686e40 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 401.0692999996245ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:15:39.538
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:17.948
+!MESSAGE [Info]	[fetchCompletions] Request 6fcd4c24-23b6-4cee-ab08-cc45dd0e1f7f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 354.54649999924004ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:18.065
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:18.485
+!MESSAGE [Info]	[fetchCompletions] Request 8fc21386-cae3-4c5c-a704-4d491d2e5b47 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 407.15309999883175ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:18.550
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:20.806
+!MESSAGE [Info]	[fetchCompletions] Request d58006e3-8ef6-448e-9191-8a73a758fcee at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 341.56919999979436ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:21.075
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:21.456
+!MESSAGE [Info]	[fetchCompletions] Request ea6aaab4-ec3f-4d85-a900-305279e5ec34 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 351.7374999988824ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:21.521
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:33.965
+!MESSAGE [Info]	[fetchCompletions] Request 9df05a50-516e-41a3-ae2e-d8d78c5f6513 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 365.42820000089705ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:34.035
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:34.941
+!MESSAGE [Info]	[fetchCompletions] Request c254cb8e-ce28-4334-99ba-af3344572bdd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 881.4268999993801ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:35.016
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:41.944
+!MESSAGE [Info]	[fetchCompletions] Request 986392cb-46c4-4c53-a398-180aa044c551 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 425.38480000011623ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:42.018
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:42.450
+!MESSAGE [Info]	[fetchCompletions] Request baa89a74-ec43-46f9-ba07-38e144924fb3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 371.0404000002891ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:42.468
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:43.452
+!MESSAGE [Info]	[fetchCompletions] Request 1c8c9669-c653-4a2e-b1d3-0ced5c313f70 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 338.7708000000566ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:43.524
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:44.030
+!MESSAGE [Info]	[fetchCompletions] Request 5e6728e7-7123-45c9-964c-22d70b463936 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 378.5291999988258ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:44.104
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:44.758
+!MESSAGE [Info]	[fetchCompletions] Request fb1f4ca1-2f81-423d-936b-0979cb43f2ef at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 349.9280000012368ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:44.841
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:45.632
+!MESSAGE [Info]	[fetchCompletions] Request 0e866850-02c6-4468-9442-94ed60c100c9 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 326.0800000000745ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:45.767
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:46.249
+!MESSAGE [Info]	[fetchCompletions] Request b8242c3e-dd19-47a3-84e9-ef66ae05c9f4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 469.76050000078976ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:46.266
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:46.364
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:16:48.366
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:16:48.366
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:16:48.366
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:16:48.366
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:16:48.698
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:17:08.570
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:17:08.571
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:17:08.571
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:17:08.571
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:43.686
+!MESSAGE [Info]	[fetchCompletions] Request 1de4183a-ef65-416b-93b1-2bf2a38a38f5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 352.3313999995589ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:44.072
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:44.430
+!MESSAGE [Info]	[fetchCompletions] Request ce176048-ea58-46f3-a662-2c4d123ea937 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 347.5065000001341ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:44.547
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:44.917
+!MESSAGE [Info]	[fetchCompletions] Request 7f374bc1-8c72-4ed2-ad7b-1a66c4bdd0f1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 360.3894000016153ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:45.084
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:46.855
+!MESSAGE [Info]	[fetchCompletions] Request 7070f22c-7cae-48fe-a851-0972fadfe0d1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 430.6557999998331ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:47.402
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:47.772
+!MESSAGE [Info]	[fetchCompletions] Request 7213e3d1-bbb2-4cf5-a5e7-b739a2ac77af at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 362.36869999952614ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:47.896
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:48.658
+!MESSAGE [Info]	[fetchCompletions] Request f70c4fc9-88dc-4842-afde-62c91ec4e8ea at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 745.4173999987543ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:48.965
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:49.776
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:50.768
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:51.114
+!MESSAGE [Info]	[fetchCompletions] Request 218888c0-f4da-4e7a-b588-d284a0cc4586 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 391.89619999937713ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:51.182
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:51.815
+!MESSAGE [Info]	[fetchCompletions] Request 421a15ab-7380-4882-8619-45a569e66ba0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 391.9154000002891ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:51.857
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:52.375
+!MESSAGE [Info]	[fetchCompletions] Request f0f14493-5512-442e-8ed6-2ab9a2f825cd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 499.8279999997467ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:52.417
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:52.824
+!MESSAGE [Info]	[fetchCompletions] Request 0cd57a24-1ee0-462b-9ae2-ca580446cf54 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 340.26640000008047ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:53.151
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:53.677
+!MESSAGE [Info]	[fetchCompletions] Request 491f84d0-faa4-4874-8ecb-0efd62c6eb25 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 392.9773999992758ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:53.679
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:55.874
+!MESSAGE [Info]	[fetchCompletions] Request e05b8910-0c8a-4228-8cdd-02ee5d88dcf5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 395.6836999990046ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:56.204
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:56.571
+!MESSAGE [Info]	[fetchCompletions] Request b1082c8b-bd67-45a0-83cf-495bcb6f647c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 358.3232999984175ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:57.179
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:57.510
+!MESSAGE [Info]	[fetchCompletions] Request 1f161ee5-141a-4088-a52a-51e78c8e0c41 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 305.16469999961555ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:57.511
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:58.384
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:17:58.385
+!MESSAGE [Info]	[fetchCompletions] Request b677f58b-e8bc-434e-9665-777dd816abe7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 461.22580000013113ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:01.173
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:01.858
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:08.768
+!MESSAGE [Info]	[fetchCompletions] Request 16fd44bf-a57a-4ec5-8cf5-ce785cce68a3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 378.8947999998927ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:08.833
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:09.373
+!MESSAGE [Info]	[fetchCompletions] Request 8a5904cb-fa71-4848-b3eb-05f1809cb7d5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 530.9692000001669ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:09.433
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:11.297
+!MESSAGE [Info]	[fetchCompletions] Request 8cf66a91-1903-445d-874c-b57de8a539a1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 365.11809999868274ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:11.434
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:11.813
+!MESSAGE [Info]	[fetchCompletions] Request 568f6dc4-60bc-4f0c-9aa7-1e8fa44f5256 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 353.5498999990523ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:11.887
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:12.235
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:13.176
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:13.896
+!MESSAGE [Info]	[fetchCompletions] Request babe3a88-de38-459f-a89a-fa4123d1840c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 408.6081999987364ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:13.919
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:21.959
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:21.959
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:21.960
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:21.960
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:22.381
+!MESSAGE [Info]	[fetchCompletions] Request bb8d7971-dc85-4f02-bbf8-cc2d39fc89ed at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 455.36649999953806ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:22.381
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:30.348
+!MESSAGE [Info]	[fetchCompletions] Request db99c262-12ae-42d4-a888-c4a9cbd2b6ce at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 316.1499999985099ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:30.427
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:30.805
+!MESSAGE [Info]	[fetchCompletions] Request 9eccb1a2-937a-48eb-ac7c-a77e8c918d66 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 369.06299999915063ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:18:30.884
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:31.067
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:31.068
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:31.068
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:18:31.068
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:31.896
+!MESSAGE [Info]	[fetchCompletions] Request 6d5ade77-6c16-4443-9864-67f490517737 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 326.33950000070035ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:31.989
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:32.435
+!MESSAGE [Info]	[fetchCompletions] Request 493c7d16-c358-48bd-bb29-d871876cf5a3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 337.8131000008434ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:32.565
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:33.278
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:33.935
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:35.936
+!MESSAGE [Info]	[fetchCompletions] Request 0d05e367-8566-47cc-8627-048a787bd68d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 440.99210000038147ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:36.192
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:36.543
+!MESSAGE [Info]	[fetchCompletions] Request afa5305a-5bae-4d6b-b82c-5da804f576d3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 335.3105999995023ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:36.771
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:38.286
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:39.259
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:46.369
+!MESSAGE [Info]	[fetchCompletions] Request 06ee5fb3-d856-4df4-a714-c7d5e5d2e788 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 382.385399999097ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:46.444
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:47.265
+!MESSAGE [Info]	[AutoModelService] Auto model cache cleared due to token update
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:49.520
+!MESSAGE [Info]	[fetchCompletions] Request d49379d6-1642-4dd9-9958-ea148c1ff54a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 327.61549999937415ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:49.714
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:50.052
+!MESSAGE [Info]	[fetchCompletions] Request e8c8c997-608a-42b3-a813-b7c7b38cdcb6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 326.9177000001073ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:50.123
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:51.747
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:19:52.690
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:09.769
+!MESSAGE [Info]	[fetchCompletions] Request d1cf55cb-8062-4f29-9ea8-a64cb70f1892 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 366.08760000020266ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:09.882
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:10.232
+!MESSAGE [Info]	[fetchCompletions] Request dbc53786-bca9-4b83-816f-da3dcebf116f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 332.016799999401ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:10.303
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:12.694
+!MESSAGE [Info]	[fetchCompletions] Request bf3a57b1-c93c-4d39-89ba-4efd6fd26591 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 346.1184999998659ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:12.990
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:13.459
+!MESSAGE [Info]	[fetchCompletions] Request cca91446-2070-4154-ae16-a5213d7b9966 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 376.2518000006676ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:13.530
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:14.029
+!MESSAGE [Info]	[fetchCompletions] Request 93b51003-cf72-4fb5-acd0-acdd6dd7d08c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 339.50989999994636ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:14.277
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:14.633
+!MESSAGE [Info]	[fetchCompletions] Request 40aef5ac-8b0d-4aac-93e4-60b4e8a0b89a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 341.0298999994993ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:14.704
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:28.177
+!MESSAGE [Info]	[fetchCompletions] Request 0fa17151-86a5-4336-ac25-9fcfcac06a07 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 392.0647999998182ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:28.248
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:28.737
+!MESSAGE [Info]	[fetchCompletions] Request e5a46b46-0df1-413f-89e7-35dde028e706 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 482.35280000045896ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:28.812
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:29.219
+!MESSAGE [Info]	[fetchCompletions] Request c27b0bb0-8084-4230-a1c4-1a32958beb75 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 394.03909999877214ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:29.592
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:30.134
+!MESSAGE [Info]	[fetchCompletions] Request 3884274b-1044-4aa0-b088-5a2c93274ca0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 519.2258000001311ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:30.269
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:33.126
+!MESSAGE [Info]	[fetchCompletions] Request 96e387b8-4165-44ee-a07a-93fcb4427a2a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 404.5469000004232ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:33.267
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:33.616
+!MESSAGE [Info]	[fetchCompletions] Request fb401716-34b4-4cab-a7df-5c7d8ab90e0d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 339.0313000008464ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-01-28 17:20:33.649
+!MESSAGE [Error]	[AsyncCompletionManager] [fb401716-34b4-4cab-a7df-5c7d8ab90e0d] Request errored with AbortError: The operation was aborted.
+    at AbortSignal.abortHandler (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:106:17)
+    at AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:486:10)
+    at abortSignal (node:internal/abort_controller:457:3)
+    at AbortController.abort (node:internal/abort_controller:505:5)
+    at C:\snapshot\copilot-client\lib\src\networking.ts:105:19
+    at WWe.invoke (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\events.js:55:39)
+    at t.fire (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\events.js:117:36)
+    at q1e.cancel (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\cancellation.js:41:31) {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:33.988
+!MESSAGE [Info]	[fetchCompletions] Request a3dd1448-5358-411b-bd9d-bf2766d59439 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 336.56330000050366ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:34.055
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:34.438
+!MESSAGE [Info]	[fetchCompletions] Request cc1e9d31-efc0-493d-b5fb-96c3189ad65b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 357.3290999997407ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:34.546
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:45.589
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:46.232
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:47.175
+!MESSAGE [Info]	[fetchCompletions] Request 51888d45-7e81-4854-9e86-fc21a3be93db at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 349.8728000000119ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:47.256
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:51.006
+!MESSAGE [Info]	[fetchCompletions] Request 85235976-43b6-4e67-bdc0-b7c3975ed162 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 366.4806999992579ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:51.078
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:51.431
+!MESSAGE [Info]	[fetchCompletions] Request 3ab97cd1-048e-4ebc-ba73-6c1086bcb73b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 335.6560999993235ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-01-28 17:20:51.635
+!MESSAGE [Error]	[AsyncCompletionManager] [3ab97cd1-048e-4ebc-ba73-6c1086bcb73b] Request errored with AbortError: The operation was aborted.
+    at AbortSignal.abortHandler (C:\snapshot\copilot-client\node_modules\@adobe\helix-fetch\src\fetch\index.js:106:17)
+    at AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+    at AbortSignal.dispatchEvent (node:internal/event_target:762:26)
+    at runAbort (node:internal/abort_controller:486:10)
+    at abortSignal (node:internal/abort_controller:457:3)
+    at AbortController.abort (node:internal/abort_controller:505:5)
+    at C:\snapshot\copilot-client\lib\src\networking.ts:105:19
+    at WWe.invoke (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\events.js:55:39)
+    at t.fire (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\events.js:117:36)
+    at q1e.cancel (C:\snapshot\copilot-client\node_modules\vscode-jsonrpc\lib\common\cancellation.js:41:31) {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:51.950
+!MESSAGE [Info]	[fetchCompletions] Request b2e8aae7-2083-4925-b46a-6d20e01e1a71 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 312.971400000155ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:52.077
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:52.560
+!MESSAGE [Info]	[fetchCompletions] Request 8171b001-67aa-4158-82f6-ab30a1b6bccf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 380.0945000015199ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:52.712
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:53.154
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:53.820
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:54.963
+!MESSAGE [Info]	[fetchCompletions] Request b9aedd67-ece9-4ae7-bd81-8c350d21f383 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 393.0106000006199ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:20:54.964
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:08.548
+!MESSAGE [Info]	[fetchCompletions] Request 18961fe7-e8c1-495b-aedc-841c3ac1b150 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 334.1477999985218ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:08.854
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:09.211
+!MESSAGE [Info]	[fetchCompletions] Request e98e3a74-bac8-44b0-b171-ea5e2f8e4296 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 332.3276000004262ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:09.371
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:09.582
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-28 17:21:10.452
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:21:11.253
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:21:11.254
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:21:11.254
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-01-28 17:21:11.254
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
