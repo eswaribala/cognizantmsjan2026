@@ -14,7 +14,7 @@
 }
 
 h1{
-    background-image: radial-gradient(black,blueviolet,goldenrod,yellow, pink,darkslateblue,lawngreen,orange);
+    background-image: radial-gradient(black,blueviolet,goldenrod, pink,darkslateblue,lawngreen,orange);
     -webkit-background-clip: text;
     font-size: xx-large;
     font-weight: bold;
