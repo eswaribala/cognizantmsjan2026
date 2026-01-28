@@ -4,34 +4,86 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
-<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-<script th:src="@{/webjars/jquery/jquery.min.js}">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.8/css/bootstrap.min.css}">
 
-</script>
-<link rel="stylesheet" th:href="@{/css/header.css}">
+<script th:src="@{/webjars/jquery/3.7.1/dist/jquery.min.js}"></script>
+
+<script th:src="@{/webjars/bootstrap/5.3.8/js/bootstrap.bundle.min.js}"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/header.css}">
 </head>
 <body>
  <header th:replace="fragments/header :: header">
  
  </header>
- <section>
- <form class="container" style="margin-top: 30px; margin-right:100px;width: 30%; float: right;font-size: 20px;">
- <fieldset>
- <legend style="text-align: center;">Patient Registration Form</legend>
- <input type="text" class="form-control" style="width: 100%;" placeholder=" First Name"/><br/>
- <input type="text" class="form-control" style="width: 100%;" placeholder=" Last Name"/><br/>
- <input type="email" class="form-control" style="width: 100%;" placeholder=" Email"/><br/>
- <input type="number" class="form-control" style="width: 100%;" placeholder="ContactNo"/><br/>
- <input type="text" class="form-control" style="width: 100%;" placeholder="Gender"/><br/>
- <input type="date" class="form-control" style="width: 100%;" placeholder="Date of Birth"/><br/>
- <input type="text" class="form-control" style="width: 100%;" placeholder="Ailment"/><br/>
- <input type="text" class="form-control" style="width: 100%;" placeholder="Occupation"/><br/>
- <button type="submit" style="background-color: blue;color:white;margin-left:40%;">Submit</button>
- </fieldset>
- </form>
- 
- </section>
+ <section class="container my-5">
+
+    <div class="row justify-content-end">
+        <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card shadow-sm">
+                <div class="card-header text-center fw-bold">
+                    Patient Registration Form
+                </div>
+
+                <div class="card-body">
+                    <form>
+
+                        <div class="mb-3">
+                           
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+
+                        <div class="mb-3">
+                          
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+
+                        <div class="mb-3">
+                            
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                           
+                            <input type="number" class="form-control" placeholder="Contact No">
+                        </div>
+
+                        <div class="mb-3">
+                           
+                            <input type="text" class="form-control" placeholder="Gender">
+                        </div>
+
+                        <div class="mb-3">
+                           
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                           
+                            <input type="text" class="form-control" placeholder="Ailment">
+                        </div>
+
+                        <div class="mb-3">
+                            
+                            <input type="text" class="form-control" placeholder="Occupation">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
  <footer th:replace="fragments/footer :: footer">
  </footer>
 </html>

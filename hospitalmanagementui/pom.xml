@@ -64,14 +64,14 @@
 		    <groupId>org.webjars</groupId>
 		    <artifactId>bootstrap</artifactId>
 		    <version>5.3.8</version>
-		    <scope>compile</scope>
+		   
 		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.webjars.bower/jquery -->
 		<dependency>
 		    <groupId>org.webjars.bower</groupId>
 		    <artifactId>jquery</artifactId>
 		    <version>3.7.1</version>
-		    <scope>compile</scope>
+		    
 		</dependency>
 	</dependencies>
 
