@@ -18,7 +18,6 @@ import lombok.experimental.SuperBuilder;
 public abstract class Person implements Serializable {
 	
 	
-	
 	private FullName fullName;
 	
 	private Gender gender;
@@ -26,6 +25,6 @@ public abstract class Person implements Serializable {
 	private LocalDate dateOfBirth;
 
 	private long contactNumber;
-		private String email;	
+	private String email;	
  
 }
