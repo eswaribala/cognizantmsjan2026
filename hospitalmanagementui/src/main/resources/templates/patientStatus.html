@@ -9,7 +9,8 @@
 <script th:src="@{/webjars/jquery/3.7.1/dist/jquery.min.js}"></script>
 
 <script th:src="@{/webjars/bootstrap/5.3.8/js/bootstrap.bundle.min.js}"></script>
-
+   <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/header.css}">
 </head>
 <body>
 <header th:replace="fragments/header :: header">
@@ -37,7 +38,7 @@
     </div>
 </div>
 </section>
-<footer th:replace="fragments/footer :: footer">
+<footer th:replace="fragments/footer :: footer"></footer>
 
 </body>
 </html>

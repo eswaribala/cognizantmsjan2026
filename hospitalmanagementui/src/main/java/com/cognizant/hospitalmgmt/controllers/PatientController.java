@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.client.RestClient;
@@ -34,7 +35,7 @@ public class PatientController {
 		model.addAttribute("response", response);
 		return "patientStatus";
 	}
-	
+	@GetMapping("/showPatients")
 	public String showPatients(Model model) {
 	 List<PatientResponse>	responses=restClient.get().uri(patientServiceUrl)
 		.retrieve().body(new ParameterizedTypeReference<List<PatientResponse>>() {});
