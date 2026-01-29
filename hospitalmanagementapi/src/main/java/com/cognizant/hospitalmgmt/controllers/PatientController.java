@@ -6,6 +6,7 @@ import com.cognizant.hospitalmgmt.dtos.PatientResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -32,7 +33,7 @@ public class PatientController {
 	private PatientService patientService;
     @Autowired
     private PatientMapper patientMapper;
-    
+    @PreAuthorize("hasAnyAuthority('SCOPE_developer')")
     @PostMapping("/v1.0")
     public ResponseEntity<GenericMessage> addPatient(@Valid @RequestBody PatientDTO patientDTO) {
 		//mapping DTO to entity
@@ -55,6 +56,7 @@ public class PatientController {
     	return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new GenericMessage(patientResponse));
 	}
+    @PreAuthorize("hasAnyAuthority('SCOPE_tester','SCOPE_developer')")
     @GetMapping("/v1.0")
     public List<PatientResponse> getAllPatients() {
     	List<Patient> patients=	patientService.getAllPatients();
@@ -62,7 +64,7 @@ public class PatientController {
     	return patientResponses;
     	
     }
-    
+    @PreAuthorize("hasAnyAuthority('SCOPE_tester','SCOPE_developer')")
     @GetMapping("/v1.0/{adharCardNo}")
 	public ResponseEntity<GenericMessage> getPatientByAdharCardNo(@PathParam("adharCardNo") String adharCardNo) {
 		
@@ -71,7 +73,7 @@ public class PatientController {
     	return ResponseEntity.status(HttpStatus.ACCEPTED)
 				.body(new GenericMessage(patientResponse));
 	}
-    
+    @PreAuthorize("hasAnyAuthority('SCOPE_developer')")
     @PatchMapping("/v1.0")
     public ResponseEntity<GenericMessage> updatePatientByEmailAndPhoneNumber(
     		@RequestParam String adharCardNo,
@@ -81,7 +83,7 @@ public class PatientController {
     		return ResponseEntity.status(HttpStatus.ACCEPTED)
 					.body(new GenericMessage(patientResponse));
     }
-    
+    @PreAuthorize("hasAnyAuthority('SCOPE_developer')")
     @DeleteMapping("/v1.0")
     public ResponseEntity<GenericMessage> deletePatientByAdharCardNo(
 			@RequestParam String adharCardNo) {
