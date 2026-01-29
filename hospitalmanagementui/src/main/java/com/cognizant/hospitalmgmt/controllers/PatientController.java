@@ -2,12 +2,14 @@ package com.cognizant.hospitalmgmt.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.client.RestClient;
 
+import com.cognizant.hospitalmgmt.models.GenericMessage;
 import com.cognizant.hospitalmgmt.models.Patient;
 import com.cognizant.hospitalmgmt.models.PatientResponse;
 
@@ -23,8 +25,9 @@ public class PatientController {
 		System.out.println("Patient Details: " + patient);
 		// Logic to save patient details
 		//api call to save patient
-		String response=restClient.post().uri(patientServiceUrl).body(patient)
-		.retrieve().body(String.class);
+		GenericMessage<PatientResponse> message=restClient.post().uri(patientServiceUrl).body(patient)
+		.retrieve().body(new ParameterizedTypeReference<GenericMessage<PatientResponse>>() {});
+		PatientResponse response=(PatientResponse) message.getObject();
 		System.out.println("Response from Patient Service: " + response);
 		model.addAttribute("response", response);
 		return "patientStatus";
