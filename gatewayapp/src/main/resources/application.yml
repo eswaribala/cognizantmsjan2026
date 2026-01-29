@@ -25,7 +25,7 @@ spring:
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             scope: openid, profile, email
-          keycloak-with-manager-scope:
+          keycloak-with-tester-scope:
             provider: keycloak
             client-id: user2
             client-secret: cmsQ4v9ljWQqoLf52lVKjAAw1aHM7Y9D

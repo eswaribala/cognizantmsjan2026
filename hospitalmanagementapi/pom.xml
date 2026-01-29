@@ -31,7 +31,7 @@
         <springdoc.version>2.1.0</springdoc.version>
         <javax.version>1.3.2</javax.version>
         <springdoc-openapi-webmvc-ui.version>2.8.5</springdoc-openapi-webmvc-ui.version>
-
+		<spring-cloud.version>2025.0.1</spring-cloud.version>
     </properties>
 	<dependencies>
 		<dependency>
@@ -112,7 +112,32 @@
 			    <version>1.6.3</version>
 			    <scope>compile</scope>
 			</dependency>
+			  <!--  security  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-resource-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-jose</artifactId>
+        </dependency>
+
 	</dependencies>
+<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
