@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.8/css/bootstrap.min.css}">
+
+<script th:src="@{/webjars/jquery/3.7.1/dist/jquery.min.js}"></script>
+
+<script th:src="@{/webjars/bootstrap/5.3.8/js/bootstrap.bundle.min.js}"></script>
+
+</head>
+<body>
+    <header th:replace="fragments/header :: header">
+    
+    </header>
+    <section>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>AdharCard No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact Number</th>
+                <th>Ailment</th>
+                <th>Occupation</th>
+              </tr>
+         </thead>
+         <tbody>
+         <tr th:each="patient : ${patients}">
+            <td th:text="${patient.adharCardNo}">AdharCard No</td>
+            <td th:text="${patient.fullNameResponse.firstName}">First Name</td>
+            <td th:text="${patient.fullNameResponse.lastName}">Last Name</td>
+            <td th:text="${patient.email}">Email</td>
+            <td th:text="${patient.contactNo}">Contact Number</td>
+            <td th:text="${patient.ailment}">Ailment</td>
+            <td th:text="${patient.occupation}">Occupation</td>
+         </tbody>  
+    </section>
+    
+    <footer th:replace="fragments/footer :: footer"></footer>	
+
+</body>
+</html>

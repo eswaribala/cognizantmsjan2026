@@ -1,5 +1,7 @@
 package com.cognizant.hospitalmgmt.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
@@ -31,6 +33,14 @@ public class PatientController {
 		System.out.println("Response from Patient Service: " + response);
 		model.addAttribute("response", response);
 		return "patientStatus";
+	}
+	
+	public String showPatients(Model model) {
+	 List<PatientResponse>	responses=restClient.get().uri(patientServiceUrl)
+		.retrieve().body(new ParameterizedTypeReference<List<PatientResponse>>() {});
+	 model.addAttribute("patients", responses);
+		return "showPatients";	
+		
 	}
 
 }
