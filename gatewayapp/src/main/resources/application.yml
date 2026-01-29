@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: gateway
+  
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            token-uri: http://localhost:8080/realms/master/protocol/openid-connect/token
+            authorization-uri: http://localhost:8080/realms/master/protocol/openid-connect/auth
+            userinfo-uri: http://localhost:8080/realms/master/protocol/openid-connect/userinfo
+            jwks-uri:  http://localhost:8080/realms/master/protocol/openid-connect/certs
+            user-name-attribute: preferred_username
+        resourceserver:
+          jwt:
+            jwks-uri: http://localhost:8080/realms/master/protocol/openid-connect/certs
+
+        registration:
+          keycloak-with-developer-scope:
+            provider: keycloak
+            client-id: user1
+            client-secret: UQ8RUdmh6yscVzS8wT7D87WB1l65JG3x
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: openid, profile, email,developer
+          keycloak-with-manager-scope:
+            provider: keycloak
+            client-id: user2
+            client-secret: cmsQ4v9ljWQqoLf52lVKjAAw1aHM7Y9D
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: openid, profile, email,manager
+  securitySchemes:
+    my_oAuth_security_schema:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://localhost:8080/oauth2/authorize
+          scopes:
+            read_access: read data
+            write_access: modify data
+
+server.port: 7060
+
+logging.level:
+  org.springframework.cloud.gateway: DEBUG
+  org.springframework.security: DEBUG
+  org.springframework.web.reactive.function.client: TRACE
