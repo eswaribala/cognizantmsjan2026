@@ -53,8 +53,7 @@ public class PatientController {
     	Patient savedPatient = patientService.addPatient(patient);
     	PatientResponse patientResponse = patientMapper.toDTOs(savedPatient);
     	return ResponseEntity.status(HttpStatus.CREATED)
-				.body(new GenericMessage("Patient added successfully with Adhar Card No: " 
-    	+patientResponse,null));
+				.body(new GenericMessage(patientResponse));
 	}
     @GetMapping("/v1.0")
     public List<PatientResponse> getAllPatients() {
@@ -70,8 +69,7 @@ public class PatientController {
 		Patient patient = patientService.getPatientByAdharCardNo(adharCardNo);
 		PatientResponse patientResponse = patientMapper.toDTOs(patient);
     	return ResponseEntity.status(HttpStatus.ACCEPTED)
-				.body(new GenericMessage("Patient Retrieved successfully with Adhar Card No: " 
-    	+ patientResponse,null));
+				.body(new GenericMessage(patientResponse));
 	}
     
     @PatchMapping("/v1.0")
@@ -81,8 +79,7 @@ public class PatientController {
     		Patient updatedPatient = patientService.updatePatient(adharCardNo, contactNo, email);
     	    PatientResponse patientResponse = patientMapper.toDTOs(updatedPatient);
     		return ResponseEntity.status(HttpStatus.ACCEPTED)
-					.body(new GenericMessage("Patient updated successfully with Adhar Card No: " 
-			+ patientResponse,null));
+					.body(new GenericMessage(patientResponse));
     }
     
     @DeleteMapping("/v1.0")
@@ -92,11 +89,11 @@ public class PatientController {
 			if(isDeleted) {
 			    return ResponseEntity.status(HttpStatus.ACCEPTED)
 						.body(new GenericMessage("Patient deleted successfully with Adhar Card No: " 
-				+ adharCardNo,null));
+				+ adharCardNo));
 			} else {
 				return ResponseEntity.status(HttpStatus.NOT_FOUND)
 						.body(new GenericMessage("Patient not found with Adhar Card No: " 
-				+ adharCardNo,null));
+				+ adharCardNo));
 			}
 	}
     

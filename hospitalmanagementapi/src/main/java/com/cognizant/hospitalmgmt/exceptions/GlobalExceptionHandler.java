@@ -20,7 +20,7 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<GenericMessage> handlePatientNullException(PatientNullException ex) {
 		
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-				.body(new GenericMessage<>(null, ex.getMessage()));
+				.body(new GenericMessage<>(ex.getMessage()));
 	}
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)
@@ -39,6 +39,6 @@ public class GlobalExceptionHandler {
 		response.put("Total Errors", String.valueOf(errors.size()));
 		response.put("TimeStamp", LocalDateTime.now().toString());
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-				.body(new GenericMessage<>(null, response.toString()));
+				.body(new GenericMessage<>(response.toString()));
 	}
 }

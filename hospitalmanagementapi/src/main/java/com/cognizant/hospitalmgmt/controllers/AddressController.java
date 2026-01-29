@@ -36,7 +36,7 @@ public class AddressController {
 		Address savedAddress=addressService.addAddress(adharCardNo,address);
 		//entity to dto
 		AddressResponse addressResponse=addressMapper.entitytodto(savedAddress);
-		GenericMessage genericMessage=new GenericMessage("Address added successfully"+addressResponse,null);
+		GenericMessage genericMessage=new GenericMessage(addressResponse);
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(genericMessage);
 	}
@@ -46,7 +46,7 @@ public class AddressController {
 		List<Address> addresses=addressService.getAllAddresses(adharCardNo);
 		List<AddressResponse> addressResponse=addressMapper.entitytodto(addresses);
 		return ResponseEntity.status(HttpStatus.OK)
-				.body(new GenericMessage("Addresses fetched successfully"+addressResponse,null));
+				.body(new GenericMessage(addressResponse));
 	}
 	
 
