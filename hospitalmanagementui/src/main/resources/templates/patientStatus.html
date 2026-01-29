@@ -22,7 +22,9 @@
                 <div class="card-body">
                     <p><strong>Patient ID:</strong> <span th:text="${response.adharCardNo}"></span></p>
                     <p><strong>Name:</strong> <span th:text="${response.fullNameResponse.firstName} + ' ' + ${patient.fullName.lastName}">John Doe</span></p>
-                        </div>
+                    <p><strong>Email:</strong> <span th:text="${response.email}"></span> </p>
+                
+                </div>
                 <div class="card-footer text-center">
                     <a th:href="@{/}" class="btn btn-primary">Back to Home</a>
                 </div>
