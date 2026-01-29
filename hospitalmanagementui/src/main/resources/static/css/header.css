@@ -24,3 +24,33 @@ h1{
     font-family: "Lucida Calligraphy"
 
 }
+
+ul{
+	list-style-type: none;
+	display: flex;
+    margin-left: 5%;
+    font-size: large;
+    font-weight: bold;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    align-items: center;          /* vertically center items */
+    justify-content: left;        /* title after the logo */
+    gap: 40px;   
+                /* spacing between logo and title */
+}
+
+ul li a{
+	display: block;
+    color: blue;
+    background-color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
