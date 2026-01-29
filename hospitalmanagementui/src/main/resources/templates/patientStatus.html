@@ -3,8 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.8/css/bootstrap.min.css}">
+
+<script th:src="@{/webjars/jquery/3.7.1/dist/jquery.min.js}"></script>
+
+<script th:src="@{/webjars/bootstrap/5.3.8/js/bootstrap.bundle.min.js}"></script>
+
 </head>
 <body>
-<h1>Patient Form Submitted Successfully</h1>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Patient Status</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>Patient ID:</strong> <span th:text="${response.adharCardNo}"></span></p>
+                    <p><strong>Name:</strong> <span th:text="${response.fullName.firstName} + ' ' + ${patient.fullName.lastName}">John Doe</span></p>
+                        </div>
+                <div class="card-footer text-center">
+                    <a th:href="@{/}" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
