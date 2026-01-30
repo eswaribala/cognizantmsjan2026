@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.cognizant.hospitalmgmt.exceptions.PatientNotFoundException;
@@ -24,7 +25,7 @@ public class PatientServiceImpl implements PatientService {
     @Autowired
     private EntityManager entityManager;
 	@Override
-	@Transactional(rollbackFor = PatientNullException.class)
+	@Transactional(propagation = Propagation.SUPPORTS,timeout = 100, rollbackFor = PatientNullException.class)
 	public Patient addPatient(Patient patient) {
 		// TODO Auto-generated method stub
 		if(patient!=null) {
