@@ -1,31 +1,38 @@
 package com.cognizant.hospitalmgmt.services;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.cognizant.hospitalmgmt.controllers.PatientController;
 import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Gender;
 import com.cognizant.hospitalmgmt.models.Patient;
 import com.github.javafaker.Faker;
 
 
-@WebMvcTest(PatientService.class)
+@WebMvcTest(PatientController.class)
 public class PatientServiceTest {
 	@Mock
 	private PatientService patientService;
 	@Autowired
 	private MockMvc mockMvc;
 	@Test
-	public void testGetAllPatients() {
-		List<Patient> patients = patientService.getAllPatients();
-		
+	public void testGetAllPatients() throws Exception {
+		List<Patient> patients = getAllPatients();
+		Mockito.when(patientService.getAllPatients()).thenReturn(patients);
+		mockMvc.perform(get("/patients/v1.0"))
+		.andExpect(status().isOk());
 		
 	}
 	
