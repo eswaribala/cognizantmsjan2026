@@ -1,4 +1,4 @@
-package com.cognizant.hospitalmgmt.services;
+package com.cognizant.hospitalmgmt.controllers;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -20,11 +20,12 @@ import com.cognizant.hospitalmgmt.mappers.PatientMapper;
 import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Gender;
 import com.cognizant.hospitalmgmt.models.Patient;
+import com.cognizant.hospitalmgmt.services.PatientService;
 import com.github.javafaker.Faker;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 
 @WebMvcTest(PatientController.class)
-public class PatientServiceTest {
+public class PatientControllerTest {
 	@MockBean
 	private PatientService patientService;
 	@Autowired
