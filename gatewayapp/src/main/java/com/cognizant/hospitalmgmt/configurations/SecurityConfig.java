@@ -12,12 +12,22 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @EnableWebFluxSecurity
 public class SecurityConfig {
 
+	/*
+	 * @Bean public SecurityWebFilterChain
+	 * springSecurityFilterChain(ServerHttpSecurity http) {
+	 * http.authorizeExchange(exchanges -> exchanges.anyExchange().authenticated())
+	 * .oauth2Login(withDefaults()); http.csrf().disable(); return http.build(); }
+	 */
+	
 	@Bean
-	public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
-		http.authorizeExchange(exchanges -> exchanges.anyExchange().authenticated())
-			.oauth2Login(withDefaults());
-		http.csrf().disable();
-		return http.build();
-	}
+    public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
+
+        return http
+                .csrf(ServerHttpSecurity.CsrfSpec::disable)
+                .authorizeExchange(ex -> ex.anyExchange().permitAll())
+                .formLogin(ServerHttpSecurity.FormLoginSpec::disable)
+                .httpBasic(ServerHttpSecurity.HttpBasicSpec::disable)
+                .build();
+    }
 
 }
