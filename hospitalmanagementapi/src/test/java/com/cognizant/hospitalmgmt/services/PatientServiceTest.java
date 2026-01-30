@@ -12,27 +12,32 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.cognizant.hospitalmgmt.controllers.PatientController;
+import com.cognizant.hospitalmgmt.mappers.PatientMapper;
 import com.cognizant.hospitalmgmt.models.FullName;
 import com.cognizant.hospitalmgmt.models.Gender;
 import com.cognizant.hospitalmgmt.models.Patient;
 import com.github.javafaker.Faker;
-
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 
 @WebMvcTest(PatientController.class)
 public class PatientServiceTest {
-	@Mock
+	@MockBean
 	private PatientService patientService;
 	@Autowired
 	private MockMvc mockMvc;
+	@MockBean
+	private PatientMapper patientMapper; 
 	@Test
 	public void testGetAllPatients() throws Exception {
 		List<Patient> patients = getAllPatients();
 		Mockito.when(patientService.getAllPatients()).thenReturn(patients);
-		mockMvc.perform(get("/patients/v1.0"))
-		.andExpect(status().isOk());
+		 mockMvc.perform(get("/patients/v1.0")
+		            .with(jwt().authorities(() -> "SCOPE_developer")))
+		        .andExpect(status().isOk());
 		
 	}
 	
