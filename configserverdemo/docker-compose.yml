@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  config-server:
+    image: springcloud/configserver:latest
+    container_name: config-server
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_CLOUD_CONFIG_SERVER_GIT_URI=https://github.com/eswaribala/cognizantconfigrepo2026.git
+      #- SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME=${GITHUB_USERNAME}
+      #- SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD=${GITHUB_TOKEN}
+    ports:
+      - "8888:8888"
+networks:
+  default:
+    external:
+      name: cognizantnetwork
