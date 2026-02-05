@@ -943,3 +943,33 @@ Contains: Missing org.springframework.cloud:spring-cloud-starter-config:jar:sour
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-05 16:52:59.403
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmicroservicesjan2026/productapi/src/main/resources/application.properties
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-05 16:55:39.772
+!MESSAGE [Info]	[fetchCompletions] Request 544bfce6-d677-469d-b50a-55edda7624ad at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 1305.782499998808ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-05 16:55:39.937
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-05 16:55:40.225
+!MESSAGE [Info]	[fetchCompletions] Request 092676a8-22e6-49eb-81bf-87c783f911fe at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 360.52219999954104ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-05 16:55:40.285
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-05 16:55:40.622
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-05 16:55:40.635
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-05 16:55:40.647
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-05 16:55:40.658
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-05 16:56:01.079
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-05 16:56:01.097
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmicroservicesjan2026/productapi/src/main/resources/application.properties
