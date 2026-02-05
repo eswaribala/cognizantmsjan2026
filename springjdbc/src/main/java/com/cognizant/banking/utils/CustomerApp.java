@@ -42,6 +42,11 @@ public class CustomerApp {
 	  System.out.println(fetchedCustomer);
 		
         context.close();
+        
+        getAllCustomers().stream().sorted((x,y)->x.getFullName().getFirstName()
+				.compareTo(y.getFullName().getFirstName()))
+        .forEach(System.out::println);
+        
 		
 	}
 	
