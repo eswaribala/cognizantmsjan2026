@@ -1,0 +1,2 @@
+spring.application.name=productapi
+server.port=7074

@@ -1,2 +1,3 @@
-2026/02/05-14:42:11.437 5ab8 Creating DB E:\cognizantmicroservicesjan2026\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2026/02/05-14:42:11.621 5ab8 Reusing MANIFEST E:\cognizantmicroservicesjan2026\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/05-16:49:26.604 5f4c Reusing MANIFEST E:\cognizantmicroservicesjan2026\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/05-16:49:26.611 5f4c Recovering log #3
+2026/02/05-16:49:26.614 5f4c Reusing old log E:\cognizantmicroservicesjan2026\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
