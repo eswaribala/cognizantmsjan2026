@@ -20,7 +20,7 @@ public class DBConfiguration {
 	private String dirverClassName;	
 	private DataSource dataSource;
 	@Bean
-	public DataSource getDataSource() {
+	private DataSource getDataSource() {
 		dataSource=DataSourceBuilder.create()
 				.url(dbUrl)
 				.username(vaultConfiguration.getMysqlusername())
