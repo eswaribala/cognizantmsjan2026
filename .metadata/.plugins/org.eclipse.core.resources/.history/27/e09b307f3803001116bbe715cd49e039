@@ -1,0 +1,12 @@
+package com.cognizant.ecommerce.configurations;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties
+public class VaultConfiguration {
+	
+	private String mysqlusername;
+	private String mysqlpassword;
+	
+
+}

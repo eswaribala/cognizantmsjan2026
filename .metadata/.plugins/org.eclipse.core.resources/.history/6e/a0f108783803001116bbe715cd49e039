@@ -1,0 +1,6 @@
+package com.cognizant.ecommerce.configurations;
+
+
+public class VaultConfiguration {
+
+}
