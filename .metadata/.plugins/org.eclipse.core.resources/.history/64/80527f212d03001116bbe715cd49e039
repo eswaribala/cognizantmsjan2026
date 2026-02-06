@@ -30,7 +30,7 @@ services:
     ports:
        #- 8060-8070:7070
        #- "7076-7078:7074"
-       -7074:7074
+	    -7074:7074
     networks: [cognizantnetwork]
     
 networks:
