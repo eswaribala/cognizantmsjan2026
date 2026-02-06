@@ -1,0 +1,6 @@
+package com.cognizant.ecommerce.controllers;
+
+@RestController
+public class ProductController {
+
+}

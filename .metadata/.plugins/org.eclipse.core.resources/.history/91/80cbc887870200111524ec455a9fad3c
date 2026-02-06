@@ -1,0 +1,5 @@
+package com.cognizant.ecommerce.repositories;
+
+public interface ProductRepository {
+
+}

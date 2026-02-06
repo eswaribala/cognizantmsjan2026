@@ -1,0 +1,22 @@
+package com.cognizant.ecommerce.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.cognizant.ecommerce.dtos.GenericResponse;
+
+@ControllerAdvice
+public class GlobalException {
+	
+	@ExceptionHandler(ProductNotFoundException.class)
+	public ResponseEntity<GenericResponse<String>> handleProductNotFoundException(ProductNotFoundException ex) {
+		return ResponseEntity.status(401).body(new GenericResponse<>(ex.getMessage()));
+	}
+	
+	@ExceptionHandler(ProductNullFoundException.class)
+	public ResponseEntity<GenericResponse<String>> handleProductNotFoundException(ProductNotFoundException ex) {
+		return ResponseEntity.status(401).body(new GenericResponse<>(ex.getMessage()));
+	}
+	
+}

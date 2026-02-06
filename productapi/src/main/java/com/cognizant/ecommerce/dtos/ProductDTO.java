@@ -1,0 +1,30 @@
+package com.cognizant.ecommerce.dtos;
+
+import java.time.LocalDate;
+
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ProductDTO { 	
+	private long productId;
+	@NotNull(message = "Name cannot be null")
+	@Pattern(regexp = "^[a-zA-Z0-9 ]+$", message = "Name must be alphanumeric")
+	private String name;	
+	private String description;	
+	@Min(value = 1, message = "Price must be non-negative")
+	private double price;	
+	@Min(value = 1, message = "Category ID must be non-negative")
+	private long categoryId;	
+	private String imageUrl;	
+	private LocalDate dop;	
+	private LocalDate expiryDate;
+	private boolean availability;
+	@Min(value = 1, message = "Quantity must be non-negative")
+	private int quantity;	
+}

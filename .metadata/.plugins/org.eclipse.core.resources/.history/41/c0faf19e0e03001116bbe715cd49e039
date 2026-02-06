@@ -1,0 +1,18 @@
+spring.application.name=productapi,application-common,application-app,mysqlsecret
+server.port=7074
+# configure access to Vault
+spring.cloud.vault.uri=http://vault:8200
+spring.cloud.vault.token=s.RdbNy0ync8CodWcm2eytcu30
+# import configuration from vault
+spring.config.import=vault://,optional:configserver:http://config-server:8888
+# configure KV backend
+spring.cloud.vault.kv.backend=secret
+spring.cloud.vault.kv.default-context=mysqlsecret
+# set refresh interval for static secrets
+secrets.refresh-interval-ms=180000
+spring.cloud.vault.kv.profiles=
+#config server properties
+spring.cloud.config.uri=http://config-server:8888
+spring.cloud.config.import-check.enabled=false
+spring.cloud.vault.enabled=true
+spring.cloud.vault.kv.enabled=true

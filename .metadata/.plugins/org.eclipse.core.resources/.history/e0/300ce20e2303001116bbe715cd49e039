@@ -1,0 +1,19 @@
+package com.cognizant.ecommerce.mappers;
+
+import org.mapstruct.Mapper;
+
+import com.cognizant.ecommerce.dtos.ProductDTO;
+import com.cognizant.ecommerce.models.Product;
+
+@Mapper(componentModel = "spring")
+public interface ProductMapper {
+	//dto to entity 
+	Product dtotoentity(ProductDTO productDTO);
+	
+	//entity to dto
+	ProductDTO entitytodto(Product product);
+	
+	List<ProductDTO> entitytolistdto(List<Product> products);
+	
+
+}

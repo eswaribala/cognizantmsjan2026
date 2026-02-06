@@ -1,0 +1,5 @@
+package com.cognizant.ecommerce.configurations;
+
+public class Swaggerconfiguration {
+
+}

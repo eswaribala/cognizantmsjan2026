@@ -1,0 +1,51 @@
+package com.cognizant.ecommerce.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cognizant.ecommerce.models.Product;
+import com.cognizant.ecommerce.repositories.ProductRepository;
+@Service
+public class ProductImpl implements ProductService {
+	@Autowired
+	private ProductRepository productRepository;
+
+	@Override
+	public Product addProduct(Product product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> getAllProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product getProductById(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product getProductByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product updateProduct(long id, long cost, int quantity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean deleteProduct(long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
