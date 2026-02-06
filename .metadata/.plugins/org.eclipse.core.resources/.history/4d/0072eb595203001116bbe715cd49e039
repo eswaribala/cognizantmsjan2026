@@ -2,7 +2,7 @@ spring.application.name=productapi,application-common,application-app,mysqlsecre
 server.port=7074
 # configure access to Vault
 spring.cloud.vault.uri=http://vault:8200
-spring.cloud.vault.token=s.FM5FWxizSNBq2Ah614Sw3JkX
+spring.cloud.vault.token=s.kS6cnkcFlkKkRI2VD8FgZG9f
 # import configuration from vault
 spring.config.import=vault://,optional:configserver:http://config-server:8888
 # configure KV backend
