@@ -60,7 +60,7 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(new GenericResponse(productDTO));
 	}
-	@GetMapping("/v1.0/byName")
+	@GetMapping("/v1.0")
 	public ResponseEntity<GenericResponse> 
 	   getProductByName(@RequestParam String name) {
 		Product product=productService.getProductByName(name);		

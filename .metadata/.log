@@ -9510,3 +9510,92 @@ java.util.concurrent.TimeoutException
 
 !ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-06 14:36:36.592
 !MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmicroservicesjan2026/productapi/src/main/java/com/cognizant/ecommerce/configurations/DBConfiguration.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2026-02-06 14:41:36.594
+!MESSAGE [Error]	[lsp] Request getCompletions: FetchResponseError: HTTP 502 
+    at apiFetch (C:\snapshot\copilot-client\lib\src\network\github.ts:34:15)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at authFromGitHubSession (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:181:22)
+    at bye.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotToken.ts:258:16)
+    at Pt.fetchTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:78:16)
+    at C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:101:24
+    at Pt.getTokenResult (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:120:16)
+    at Pt.getToken (C:\snapshot\copilot-client\lib\src\auth\copilotTokenManager.ts:150:24)
+    at t.fetchTokenAndUpdateExPValuesAndAssignments (C:\snapshot\copilot-client\lib\src\experiments\features.ts:329:23)
+    at HQe.isChatLibEnabled (C:\snapshot\copilot-client\lib\src\inlineCompletionChatLib.ts:365:31) {
+  code: 'HTTP502'
+}
+
+!ENTRY com.microsoft.copilot.eclipse 4 0 2026-02-06 14:41:36.607
+!MESSAGE [Error] org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: HTTP 502 
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: HTTP 502 
+	at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345)
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2117)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.runCompletion(CompletionProvider.java:194)
+	at com.microsoft.copilot.eclipse.core.completion.CompletionProvider$CompletionJob.run(CompletionProvider.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request getCompletions failed with message: HTTP 502 
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:449)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:37.206
+!MESSAGE [Info]	[AutoModelService] Auto model cache cleared due to token update
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:41.720
+!MESSAGE [Info]	[fetchCompletions] Request ac581885-557b-4454-916d-43fdb594dfe2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 2032.928899999708ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:41.779
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:42.207
+!MESSAGE [Info]	[fetchCompletions] Request b5bd0aa0-3e4e-4a7f-a33b-11bfa5fbd2fa at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 412.3458000011742ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:42.236
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:42.679
+!MESSAGE [Info]	[fetchCompletions] Request c6866aa6-24ad-473c-a07f-f91f3aabf880 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 347.87049999833107ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:42.743
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:43.177
+!MESSAGE [Info]	[fetchCompletions] Request 8ce758d0-29a8-4f86-86e8-cf9635604648 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 411.83509999886155ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:43.215
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:45.485
+!MESSAGE [Info]	[fetchCompletions] Request 804b2bc3-f3ac-4405-bc2f-55b43d5d2b7f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 374.41320000216365ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-02-06 14:41:45.550
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-06 14:41:46.834
+!MESSAGE Direct modification of compileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-06 14:41:46.846
+!MESSAGE Direct modification of compileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-06 14:41:46.858
+!MESSAGE Direct modification of testCompileSourceRoots through clear() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2026-02-06 14:41:46.869
+!MESSAGE Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-06 14:42:35.409
+!MESSAGE [Info] Document is null for editor: ProductController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-02-06 14:42:35.430
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///E:/cognizantmicroservicesjan2026/productapi/src/main/java/com/cognizant/ecommerce/controllers/ProductController.java
