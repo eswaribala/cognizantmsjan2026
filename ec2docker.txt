@@ -20,3 +20,22 @@ sudo apt install docker-compose
 
 #to run container
 sudo docker-compose up -d
+
+#without sudo
+Add your user to the docker group
+
+Run these commands:
+
+Step 1 — Create docker group (if not exists)
+sudo groupadd docker
+
+Step 2 — Add your user to docker group
+sudo usermod -aG docker $USER
+
+Step 3 — Re-login (VERY IMPORTANT)
+
+Log out → log back in
+
+
+Step 4 — Test
+docker ps
