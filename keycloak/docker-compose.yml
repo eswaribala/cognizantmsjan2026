@@ -43,5 +43,5 @@ services:
 volumes:
   pgdata:
 networks:
-  boeingnetwork:
+  cognizantnetwork:
     external: true
