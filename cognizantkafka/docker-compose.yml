@@ -28,7 +28,7 @@ services:
     image: mongo
     ports:
       - "27017:27017"
-
+    networks: [cognizantnetwork]
 networks:
   cognizantnetwork:
     external: true
