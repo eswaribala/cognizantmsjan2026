@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+    
+  gateway-app:
+    image: gatewayservice
+    build:
+      context: ./
+      dockerfile: dockerfile
+    
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 15
+        window: 50s
+    ports:
+       #- 8060-8070:7070
+       #- "7076-7078:7074"
+       - 7060:7060
+    networks: [cognizantnetwork]
+    
+networks:
+  cognizantnetwork:
+    external: true
+
+  
