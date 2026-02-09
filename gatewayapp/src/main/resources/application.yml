@@ -7,7 +7,7 @@ spring:
       client:
         provider:
           keycloak:
-            token-uri: http://host.docker.internal:8080/realms/master/protocol/openid-connect/token
+            token-uri: http://keycloak:8080/realms/master/protocol/openid-connect/token
 #            authorization-uri: http://localhost:8080/realms/master/protocol/openid-connect/auth
 #            userinfo-uri: http://localhost:8080/realms/master/protocol/openid-connect/userinfo
             #jwk-set-uri:  http://localhost:8080/realms/master/protocol/openid-connect/certs
@@ -38,7 +38,7 @@ spring:
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: http://host.docker.internal:8080/oauth2/authorize
+          authorizationUrl: http://keycloak:8080/oauth2/authorize
           scopes:
             read_access: read data
             write_access: modify data
