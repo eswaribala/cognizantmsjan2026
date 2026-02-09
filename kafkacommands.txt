@@ -1,7 +1,7 @@
 List the Topics
 docker exec -it <containerid> kafka-topics.sh --list --zookeeper zookeeper:2181
 Create the topic
-docker exec -it  <containerid>   kafka-topics.sh --create --zookeeper zookeeperk:2181 --replication-factor 1 --partitions 1 --topic amexqueue
+docker exec -it  <containerid>   kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic amexqueue
 Create the producer
 docker exec -it <containerid> kafka-console-producer.sh --broker-list localhost:9092 --topic boaqueue
 Create the Consumer
