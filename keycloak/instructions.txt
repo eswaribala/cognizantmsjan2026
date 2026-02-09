@@ -1,0 +1,14 @@
+Step1:
+ docker-compose up -d
+Step2:
+
+docker exec -it keycloak bash -c '
+/opt/keycloak/bin/kcadm.sh config credentials \
+  --server http://127.0.0.1:8080 \
+  --realm master \
+  --user admin \
+  --password admin &&
+/opt/keycloak/bin/kcadm.sh get realms/master | grep -i sslRequired &&
+/opt/keycloak/bin/kcadm.sh update realms/master -s sslRequired=NONE &&
+/opt/keycloak/bin/kcadm.sh get realms/master | grep -i sslRequired
+'
