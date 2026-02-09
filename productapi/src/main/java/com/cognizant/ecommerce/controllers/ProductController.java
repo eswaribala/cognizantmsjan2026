@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,7 +32,8 @@ public class ProductController {
 	private ProductService productService;
 	@Autowired
 	private ProductMapper productMapper;
-	
+	@CrossOrigin(origins = "*")
+	@PreAuthorize("hasAnyAuthority('SCOPE_developer')")
 	@PostMapping("/v1.0")
 	public ResponseEntity<GenericResponse> addProduct(@RequestBody 
 			ProductDTO productDTO) throws ProductNullException {
@@ -44,14 +47,16 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new GenericResponse(savedProductDTO));	
 	}
+	@CrossOrigin(origins = "*")
 	@GetMapping("/v1.0")
+	@PreAuthorize("hasAnyAuthority('SCOPE_tester','SCOPE_developer')")
 	public ResponseEntity<GenericResponse> getAllProducts() {
 		List<ProductDTO> productDTOs=productMapper
 				.entitytolistdto(productService.getAllProducts());		
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(new GenericResponse(productDTOs));
 	}
-	
+	@CrossOrigin(origins = "*")
 	@GetMapping("/v1.0/{id}")
 	public ResponseEntity<GenericResponse> 
 	getProductById(@PathParam("id") int id) {
@@ -60,6 +65,7 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(new GenericResponse(productDTO));
 	}
+	@CrossOrigin(origins = "*")
 	@GetMapping("/v1.0/byName")
 	public ResponseEntity<GenericResponse> 
 	   getProductByName(@RequestParam String name) {
@@ -68,6 +74,7 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(new GenericResponse(productDTO));
 	}
+	@CrossOrigin(origins = "*")
 	@PutMapping("/v1.0/{id}")
 	public ResponseEntity<GenericResponse> 
 	   updateProduct(@PathParam("id") long id,@RequestParam long price,
@@ -77,7 +84,7 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(new GenericResponse(productDTO));
 	}
-	
+	@CrossOrigin(origins = "*")
 	@DeleteMapping("/v1.0/{id}")
 	public ResponseEntity<GenericResponse> deleteProductById(@PathParam("id") int id) {
 		boolean status=productService.deleteProduct(id);

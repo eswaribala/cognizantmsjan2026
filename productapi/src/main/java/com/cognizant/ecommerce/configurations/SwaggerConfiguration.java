@@ -6,15 +6,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Component
-public class SwaggerConfiguration implements RepositoryRestConfigurer{
-
-	@Override
-	public void configureRepositoryRestConfiguration
-	(RepositoryRestConfiguration config, CorsRegistry cors) {
-		// TODO Auto-generated method stub
-		config.setExposeRepositoryMethodsByDefault(false);
-	}
-	
-	
-
+public class SwaggerConfiguration implements RepositoryRestConfigurer {
+    @Override
+    public void configureRepositoryRestConfiguration
+    (RepositoryRestConfiguration config, CorsRegistry cors) {
+          config.setExposeRepositoryMethodsByDefault(false);
+    }
 }
