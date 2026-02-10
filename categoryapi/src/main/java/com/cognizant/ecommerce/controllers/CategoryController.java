@@ -1,6 +1,7 @@
 package com.cognizant.ecommerce.controllers;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +24,7 @@ import com.cognizant.ecommerce.exceptions.CategoryNullException;
 import com.cognizant.ecommerce.mappers.CategoryMapper;
 import com.cognizant.ecommerce.models.Category;
 import com.cognizant.ecommerce.services.CategoryService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import jakarta.websocket.server.PathParam;
 
@@ -85,14 +88,30 @@ public class CategoryController {
 	}
 	@CrossOrigin(origins = "*")
 	@DeleteMapping("/v1.0/{id}")
-	public ResponseEntity<GenericResponse> deleteCategoryById(@PathParam("id") int id) {
+	public ResponseEntity<GenericResponse<String>> deleteCategoryById(@PathParam("id") int id) {
 		boolean status=categoryService.deleteCategory(id);
 		if(!status) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND)
-					.body(new GenericResponse("Category not found"));
+					.body(new GenericResponse<>("Category not found"));
 		}
 		return ResponseEntity.status(HttpStatus.OK)
-				.body(new GenericResponse("Category deleted successfully"));
+				.body(new GenericResponse<>("Category deleted successfully"));
+	}
+	@CrossOrigin(origins = "*")
+	@GetMapping("/v1.0/publish")
+	public CompletableFuture<ResponseEntity<GenericResponse<String>>> publishCategories() throws JsonProcessingException {
+		
+		categoryService.publishCategoriesToKafka().thenApply((result) -> {
+			return ResponseEntity.status(HttpStatus.OK)
+					.body(new GenericResponse<>(result.getRecordMetadata().topic()
+							+","+result.getRecordMetadata().partition()
+							+","+result.getRecordMetadata().offset()));
+			
+		}).exceptionally(ex -> {
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+					.body(new GenericResponse<>("Failed to publish categories: " + ex.getMessage()));
+		});
+		return null;
 	}
 
 }

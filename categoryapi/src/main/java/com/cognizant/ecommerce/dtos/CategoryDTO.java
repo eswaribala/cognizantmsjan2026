@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CategoryDTO { 	
-	
+	private long categoryId;
 	@NotNull(message = "Name cannot be null")
 	@Pattern(regexp = "^[a-zA-Z0-9 ]+$", message = "Name must be alphanumeric")
 	private String categoryName;	
