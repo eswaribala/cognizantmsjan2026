@@ -1,0 +1,48 @@
+ 1. In AWS  start the instance
+ 2. Start the session mobaxterm
+ 3. #start config server and vault server
+   docker container start <configserverid>
+   docker container start <vaultid>
+ 4. #check vault logs
+    docker logs vault
+ 5. copy vault token
+ 6. go to browser open vault server
+7. create mysqlsecret
+   mysqlusername root
+   mysqlpassword password
+8. create mongodbsecret
+   uri mongodb://mongo:27017/categorydb
+   databaseName categorydb
+9. cd applications/cognizantmsjan2026/productapi
+10. docker-compose down
+11 docker rmi productservice
+12. cd src/main/resources
+13. nano application.properties
+14. change the vault token and key cloak ip address in 2 places
+15. ctrl+o and press enter
+16. ctrl+x
+17. cd .. back to product api
+18. Reach product api
+19. docker-compose up -d
+20. Go to key cloak server
+21. open user1 and user2 change the ip address in valid uri
+22. from product api run docker-compose up -d
+23. go to root folder
+24. docker container start <zookeeperid>  
+25. docker container start <kafkaid>
+26. docker container start <mongodbi>
+27. go to applications.
+28. cd saga
+29. cd cognizantmsjan2026
+30. cd categoryapi
+31. docker-compose down
+32. docker rmi categoryservice
+33. cd sr/main/resources
+34. change vault token in application.properties save and exit
+35. docker-compose up -d
+
+     
+    
+     
+  
+     
