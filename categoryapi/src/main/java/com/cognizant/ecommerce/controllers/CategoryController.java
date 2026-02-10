@@ -30,6 +30,7 @@ import jakarta.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("/Category")
+
 public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
@@ -99,19 +100,18 @@ public class CategoryController {
 	}
 	@CrossOrigin(origins = "*")
 	@GetMapping("/v1.0/publish")
-	public CompletableFuture<ResponseEntity<GenericResponse<String>>> publishCategories() throws JsonProcessingException {
+	public CompletableFuture<ResponseEntity<GenericResponse<String>>> publishCategories() throws JsonProcessingException  {
+				   
+			categoryService.publishCategoriesToKafka().thenApply(result->ResponseEntity.status(HttpStatus.OK)
+			        .body(result.getRecordMetadata().topic()+","+result.getRecordMetadata().partition()+","+result.getRecordMetadata().offset()))
+			.exceptionally(ex-> {
+			    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
+			});
+		  
+		   return CompletableFuture.completedFuture(ResponseEntity.status(HttpStatus.OK)
+			        .body(new GenericResponse<>("No categories to publish")));
 		
-		categoryService.publishCategoriesToKafka().thenApply((result) -> {
-			return ResponseEntity.status(HttpStatus.OK)
-					.body(new GenericResponse<>(result.getRecordMetadata().topic()
-							+","+result.getRecordMetadata().partition()
-							+","+result.getRecordMetadata().offset()));
-			
-		}).exceptionally(ex -> {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-					.body(new GenericResponse<>("Failed to publish categories: " + ex.getMessage()));
-		});
-		return null;
+
 	}
 
 }
