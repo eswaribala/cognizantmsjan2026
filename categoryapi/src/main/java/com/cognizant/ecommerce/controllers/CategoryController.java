@@ -100,17 +100,17 @@ public class CategoryController {
 	}
 	@CrossOrigin(origins = "*")
 	@GetMapping("/v1.0/publish")
-	public CompletableFuture<ResponseEntity<GenericResponse<String>>> publishCategories() throws JsonProcessingException  {
-				   
-			categoryService.publishCategoriesToKafka().thenApply(result->ResponseEntity.status(HttpStatus.OK)
-			        .body(result.getRecordMetadata().topic()+","+result.getRecordMetadata().partition()+","+result.getRecordMetadata().offset()))
-			.exceptionally(ex-> {
-			    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
-			});
+	public CompletableFuture<ResponseEntity<String>> publishCategories() throws JsonProcessingException  {
+		return categoryService.publishCategoriesToKafka()
+                .thenApply(result->ResponseEntity.status(HttpStatus.OK)
+                        .body(result.getRecordMetadata().topic()+","+result.getRecordMetadata().partition()+","+result.getRecordMetadata().offset()))
+                .exceptionally(ex-> {
+                    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ex.getMessage());
+                });
+
+			
 		  
-		   return CompletableFuture.completedFuture(ResponseEntity.status(HttpStatus.OK)
-			        .body(new GenericResponse<>("No categories to publish")));
-		
+		  
 
 	}
 

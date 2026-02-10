@@ -106,7 +106,6 @@ INDEX VERSION 1.134+E:\cognizantmicroservicesjan2026\.metadata\.plugins\org.ecli
 3550453496.index
 3733030053.index
 1828855022.index
-4028752083.index
 1765685115.index
 2912141843.index
 4168481688.index
