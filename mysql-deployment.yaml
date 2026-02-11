@@ -25,14 +25,14 @@ spec:
         app: mysql-app
     spec:
       containers:
-      - image: mysql:8.0
+      - image: mysql
         name: mysql
         env:
           # Use secret in real usage
         - name: MYSQL_ROOT_PASSWORD
-          value: vignesh
+          value: password
         - name: MYSQL_DATABASE
-          value: "policyholderdb"
+          value: "productdb"
         ports:
         - containerPort: 3306
           name: mysql
