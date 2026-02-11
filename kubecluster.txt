@@ -35,7 +35,7 @@ aws eks update-kubeconfig --name my-cluster --region us-east-1
  aws sts get-caller-identity
 
 PRINCIPAL_ARN="arn:aws:iam::975050122380:user/eks-admin"
-CLUSTER="ekscluster"
+CLUSTER="my-cluster"
 REGION="us-east-1"
 
 aws eks create-access-entry --cluster-name ekscluster --principal-arn "$PRINCIPAL_ARN" --type STANDARD
