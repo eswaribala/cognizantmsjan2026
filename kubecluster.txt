@@ -38,7 +38,7 @@ PRINCIPAL_ARN="arn:aws:iam::975050122380:user/eks-admin"
 CLUSTER="my-cluster"
 REGION="us-east-1"
 
-aws eks create-access-entry --cluster-name mycluster --principal-arn "$PRINCIPAL_ARN" --type STANDARD
+aws eks create-access-entry --cluster-name my-cluster --principal-arn "$PRINCIPAL_ARN" --type STANDARD
 aws eks list-access-entries --cluster-name "$CLUSTER" --region "$REGION"
 aws eks describe-access-entry --cluster-name "$CLUSTER" --region "$REGION" --principal-arn "$PRINCIPAL_ARN"
 kubectl version
