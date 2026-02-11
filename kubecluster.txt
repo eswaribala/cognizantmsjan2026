@@ -66,6 +66,9 @@ AmazonEKSWorkerNodePolicy
 AmazonEC2ContainerRegistryReadOnly
 
 create kubecluster nodegroup using aws gui --> compute under kubecluster
+#cli way of creating
+aws eks delete-nodegroup --cluster-name my-cluster --nodegroup-name worker-node-grou --region us-east-1
+eksctl create nodegroup --cluster my-cluster --region us-east-1  --name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3  --managed
 #test the worker nodes
 kubectl get nodes
 #to list operations supported kubernetes
