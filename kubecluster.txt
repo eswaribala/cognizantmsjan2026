@@ -1,0 +1,72 @@
+#kube client
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.29.3/2024-04-19/bin/linux/amd64/kubectl
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+kubectl version --client
+
+#aws configuration
+curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/aws-iam-authenticator
+chmod +x ./aws-iam-authenticator
+sudo mv ./aws-iam-authenticator /usr/local/bin
+aws-iam-authenticator help
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+#execute aws configuration 
+aws configure
+
+#eks tool
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+eksctl version
+#create kube cluster using us-east-2  in aws ui
+______
+ eksctl create cluster --name my-cluster --region us-east-1 --nodegroup-name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3 --managed
+---------
+
+Use the AWS CLI update-kubeconfig command to create or update your kubeconfig for your cluster.
+aws eks update-kubeconfig --name <cluster_name>
+aws eks update-kubeconfig --name my-cluster --region us-east-2
+
+
+
+ aws sts get-caller-identity
+
+PRINCIPAL_ARN="arn:aws:iam::975050122380:user/eks-admin"
+CLUSTER="ekscluster"
+REGION="us-east-1"
+
+aws eks create-access-entry --cluster-name ekscluster --principal-arn "$PRINCIPAL_ARN" --type STANDARD
+aws eks list-access-entries --cluster-name "$CLUSTER" --region "$REGION"
+aws eks describe-access-entry --cluster-name "$CLUSTER" --region "$REGION" --principal-arn "$PRINCIPAL_ARN"
+kubectl version
+
+aws eks associate-access-policy --cluster-name "$CLUSTER" --region "$REGION"  --principal-arn "$PRINCIPAL_ARN" --policy-arn arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy --access-scope type=cluster
+
+aws eks describe-access-entry --cluster-name "$CLUSTER" --region "$REGION" --principal-arn "$PRINCIPAL_ARN"
+
+Test your configuration:
+kubectl version
+To show kube config
+cat ~/.kube/config
+
+
+#check pod,svc and deploy
+kubectl get pods
+kubectl get svc
+kubectl get deploy
+
+#create worker nodes
+create role with role name chola role
+AmazonEC2ContainerRegistry 
+AmazonEKS_CNI_Policy	 
+AmazonEKSWorkerNodePolicy
+AmazonEC2ContainerRegistryReadOnly
+
+create kubecluster nodegroup using aws gui --> compute under kubecluster
+#test the worker nodes
+kubectl get nodes
+#to list operations supported kubernetes
+kubectl api-resources
