@@ -1,0 +1,52 @@
+
+
+
+#check version
+docker -v
+#to list the images
+docker images
+#to list the containers
+docker container ls -a
+#to pull the mongo db image from docker repository
+docker pull mongo
+#to create mongo db container
+docker run --name=niit-mongo-c1 -p 27017:27017 -d mongo
+#create mongodb client
+docker exec -it <containerid> bin/bash
+#mongosh
+#to show databse
+show dbs;
+#to access database
+use <dbname>;
+# to check collections
+show collections;
+# to access document
+db.<collectionname>.find();
+#to docker build the customer api
+docker build -f dockerfile -t customerapi .
+#create docker network
+docker network create bofanetwork
+#create the containers
+docker-compose up
+
+#to scale the instances
+#trader-app instance name
+docker-compose up --scale trader-app=3 -d
+
+#create postgres db
+docker exec -it <containerid>  psql -U postgres
+#to list the databases
+#\l
+#to create the database
+create database niitdevcustomerdb;
+exit
+
+#mysql 
+docker exec -it <containerid>  bin/bash
+#mysql -p
+#show databases;
+
+#connect to remote repository
+docker login
+docker tag <imagename> <dockerhubid/reponame:tagname>
+docker push <dockerhubid/reponame:tagname>
