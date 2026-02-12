@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: productdeploy
+  name: productdeploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productdeploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: productdeploy
+    spec:
+      containers:
+      - image: eswaribala/cognizantmsjan2026:productapi
+        name: productapp
+        resources: {}          
+        
+        env:
+            - name: MYSQL_URL
+              value: jdbc:mysql://mysql:3306/productdb?useSSL=false
+            #- name: OTEL_EXPORTER_JAEGER_ENDPOINT
+              #value: "http://localhost:14250"
+            #- name: OTEL_SERVICE_NAME
+              #value: "patientapi"
+            #- name: OTEL_TRACES_SAMPLER
+              #value: "always_on"
+      #imagePullSecrets:  
+      #- name: globalaks-key
+
+status: {}
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: productservice
+  name: productservice
+spec:
+    
+  ports:
+  - protocol: TCP
+    port: 7074
+    targetPort: 7074
+    name: http
+  
+  selector:
+    app: productdeploy
+  type: LoadBalancer
+
