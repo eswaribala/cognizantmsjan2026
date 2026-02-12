@@ -4,4 +4,5 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Document"/>
     <fullyQualifiedTypeName name="org.bson.codecs.pojo.annotations.BsonId"/>
+    <fullyQualifiedTypeName name="org.springframework.kafka.annotation.KafkaListener"/>
 </qualifiedTypeNameHistroy>
