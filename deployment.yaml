@@ -18,13 +18,13 @@ spec:
         app: productdeploy
     spec:
       containers:
-      - image: eswaribala/cognizantmsjan2026:productapi
+      - image: eswaribala/cognizantmsjan2026:productapiv1
         name: productapp
         resources: {}          
         
         env:
             - name: MYSQL_URL
-              value: jdbc:mysql://mysql:3306/productdb?useSSL=false
+              value: jdbc:mysql://mysql:3306/productdb?sslMode=DISABLED&allowPublicKeyRetrieval=true&useServerPrepStmts=false
             #- name: OTEL_EXPORTER_JAEGER_ENDPOINT
               #value: "http://localhost:14250"
             #- name: OTEL_SERVICE_NAME
