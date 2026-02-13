@@ -1,0 +1,44 @@
+server:
+  port: 8082
+
+resilience4j:
+  retry:
+    retry-aspect-order: 2
+    instances:
+      gatewayRetry:
+        max-attempts: 3
+        wait-duration: 10s
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        retry-exceptions:
+          - org.springframework.web.client.RestClientException
+        ignore-exceptions:
+          -  com.siemens.circuitbreakerdemo.exceptions.IgnoreException
+  circuitbreaker:
+    circuit-breaker-aspect-order: 1
+    instances:
+      gatewayCircuitBreaker:
+        wait-duration-in-open-state: 1m
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-type: count-based
+        sliding-window-size: 3
+        minimum-number-of-calls: 3
+        slow-call-duration-threshold: 10s
+        slow-call-rate-threshold: 60
+        failure-rate-threshold: 60
+  ratelimiter:
+    ratelimiter-aspect-order: 3
+    instances:
+       gatewayRateLimiter:
+         limit-for-period: 5
+         limit-refresh-period: 2m
+         timeout-duration: 500ms
+
+
+
+
+serviceUrl: http://localhost:7076/vehicles/v1.0
+alternativeServiceUrl: https://jsonplaceholder.typicode.com/users
+
+serviceUrl1: http://localhost:7072/policyholders/v1.0
+alternativeServiceUrl1: https://httpbin.org/get

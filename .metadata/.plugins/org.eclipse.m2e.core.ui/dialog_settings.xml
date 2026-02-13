@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\cognizantmicroservicesjan2026\productkubeapi"/>
 			<item value="E:\cognizantmicroservicesjan2026\categoryapi"/>
 			<item value="E:\cognizantmicroservicesjan2026\gatewayapp"/>
 		</list>
