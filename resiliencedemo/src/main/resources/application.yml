@@ -13,7 +13,7 @@ resilience4j:
         retry-exceptions:
           - org.springframework.web.client.RestClientException
         ignore-exceptions:
-          -  com.siemens.circuitbreakerdemo.exceptions.IgnoreException
+          -  com.cognizant.ecommerce.exceptions.IgnoreException
   circuitbreaker:
     circuit-breaker-aspect-order: 1
     instances:
@@ -37,8 +37,7 @@ resilience4j:
 
 
 
-serviceUrl: http://localhost:7076/vehicles/v1.0
+serviceUrl: http://localhost:7076/patients/v1.0
 alternativeServiceUrl: https://jsonplaceholder.typicode.com/users
+gatewayUrl: http://localhost:7060/token/developer
 
-serviceUrl1: http://localhost:7072/policyholders/v1.0
-alternativeServiceUrl1: https://httpbin.org/get
