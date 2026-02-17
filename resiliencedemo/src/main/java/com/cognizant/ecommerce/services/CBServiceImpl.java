@@ -33,6 +33,7 @@ public class CBServiceImpl implements CBService {
     @Retry(name = "gatewayRetry")
     @RateLimiter(name="gatewayRateLimiter")
 	public ResponseEntity<List<PatientResponse>> getData() {
+		log.info("Fetching data from service through gateway...");
 		 String token=restClient.get().uri(gatewayUrl).retrieve()
 				 .body(String.class); 	
 		 System.out.println(token);	

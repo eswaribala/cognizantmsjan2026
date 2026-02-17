@@ -1,5 +1,0 @@
-package com.cognizant.ecommerce.mappers;
-
-public interface ProductMapper {
-
-}
