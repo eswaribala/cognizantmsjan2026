@@ -4,6 +4,7 @@ package com.cognizant.hospitalmgmt.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.annotation.RegisteredOAuth2AuthorizedClient;
+import org.springframework.security.oauth2.core.OAuth2AccessToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.WebSession;
@@ -18,7 +19,10 @@ public class ApiController {
 	private TokenService tokenService;
 	@GetMapping(value = "/token")
 	public Mono<String> getHome(@RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient) {
-		return Mono.just(authorizedClient.getAccessToken().getTokenValue());
+		
+		OAuth2AccessToken client = authorizedClient.getAccessToken();
+		client.getScopes().forEach(System.out::println);
+		return Mono.just(client.getTokenValue());
 	}
 
 	@GetMapping("/")
@@ -27,12 +31,14 @@ public class ApiController {
 	}
 	 @GetMapping("/token/developer")
 	    public Mono<String> developerToken() {
-	        return tokenService.getToken("keycloak-with-developer-scope");
+		  return tokenService.getToken("keycloak-with-developer-scope");
 	    }
 
 	    @GetMapping("/token/tester")
 	    public Mono<String> testerToken() {
-	        return tokenService.getToken("keycloak-with-tester-scope");
+	        
+	    	  return tokenService.getToken("keycloak-with-tester-scope");
+	
 	    }
 
 }

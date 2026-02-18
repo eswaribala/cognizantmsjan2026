@@ -28,15 +28,15 @@ public class TokenService {
         this.manager = m;
     }
 
-    public Mono<String> getToken(String registrationId) {
+    public Mono<String>  getToken(String registrationId) {
         OAuth2AuthorizeRequest request = OAuth2AuthorizeRequest
                 .withClientRegistrationId(registrationId)
                 // principal name can be anything for client_credentials
                 .principal("gateway-service")
                 .build();
-
         return manager.authorize(request)
                 .map(OAuth2AuthorizedClient::getAccessToken)
                 .map(OAuth2AccessToken::getTokenValue);
+                
     }
 }

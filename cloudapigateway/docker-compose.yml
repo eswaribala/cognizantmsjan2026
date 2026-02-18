@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+
+  gateway-api:
+    image: gatewayapp
+    build:
+      context: ./
+      dockerfile: dockerfile
+
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 15
+        window: 50s
+    ports:
+       #- 9060-9070:7072
+        - 8765:8765
+    networks: [bofanetwork]
+    volumes:
+      - /data/compose-app
+    #networks:
+      #- boanetwork   
+    
+
+### put all the networks here
+#networks:
+  #boanetwork:
+networks:
+  bofanetwork:
+    external: true
+
+  
