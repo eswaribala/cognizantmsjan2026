@@ -23,7 +23,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 #create kube cluster using us-east-2  in aws ui
 ______
- eksctl create cluster --name my-cluster --region us-east-1 --nodegroup-name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3 --managed
+ eksctl create cluster --name my-cluster --region us-east-1 --nodegroup-name standard-workers --node-type t3.small --nodes 2 --nodes-min 1 --nodes-max 3 --managed
 ---------
 
 Use the AWS CLI update-kubeconfig command to create or update your kubeconfig for your cluster.
@@ -68,7 +68,7 @@ AmazonEC2ContainerRegistryReadOnly
 create kubecluster nodegroup using aws gui --> compute under kubecluster
 #cli way of creating
 aws eks delete-nodegroup --cluster-name my-cluster --nodegroup-name worker-node-grou --region us-east-1
-eksctl create nodegroup --cluster my-cluster --region us-east-1  --name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3  --managed
+eksctl create nodegroup --cluster my-cluster --region us-east-1  --name standard-workers --node-type t3.small --nodes 2 --nodes-min 1 --nodes-max 3  --managed
 #test the worker nodes
 kubectl get nodes
 #to list operations supported kubernetes
